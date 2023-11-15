@@ -20,7 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/banking-clients-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -68,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-current-accounts-service",
     "node.js.detected.package.eslint": "true",
@@ -153,7 +153,7 @@
       <workItem from="1700034528441" duration="9988000" />
       <workItem from="1700046107486" duration="232000" />
       <workItem from="1700048885469" duration="93000" />
-      <workItem from="1700049089043" duration="10081000" />
+      <workItem from="1700049089043" duration="10749000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
