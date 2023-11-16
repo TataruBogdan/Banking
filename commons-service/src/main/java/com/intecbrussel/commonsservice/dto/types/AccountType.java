@@ -5,7 +5,6 @@ public enum AccountType {
     CURRENT("CURR", "current-account-service");
 
 
-
     private final String ibanType;
     private final String microservice;
 

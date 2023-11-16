@@ -1,10 +1,12 @@
 package com.intecbrussel.commonsservice.dto;
 
 import com.intecbrussel.commonsservice.dto.types.CurrentStatus;
+import lombok.Data;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
+@Data
 public class AccountCurrentDTO {
 
     @NotNull

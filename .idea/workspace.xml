@@ -4,27 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up">
-      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dao/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/AccountCurrentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/IndividualDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/CurrentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="made some changes with JOEY ! ... see if this works ?!">
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/client/IndividualRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/AccountCurrentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/impl/AccountCurrentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/AmountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/CreditAccountCurrentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/DebitAccountCurrentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/idGen/idGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/account/dto/types/CurrentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dto/types/CurrentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/account/model/AccountCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dao/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dao/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/AccountCurrentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/AccountCurrentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -191,7 +187,7 @@
       <workItem from="1700048885469" duration="93000" />
       <workItem from="1700049089043" duration="11960000" />
       <workItem from="1700121150658" duration="15113000" />
-      <workItem from="1700140647077" duration="2673000" />
+      <workItem from="1700140647077" duration="6869000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -297,7 +293,8 @@
     <MESSAGE value="added map-struct - controller CRUD ops for individual" />
     <MESSAGE value="added map-struct - controller CRUD ops for individual it's working" />
     <MESSAGE value="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up" />
+    <MESSAGE value="made some changes with JOEY ! ... see if this works ?!" />
+    <option name="LAST_COMMIT_MESSAGE" value="made some changes with JOEY ! ... see if this works ?!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
