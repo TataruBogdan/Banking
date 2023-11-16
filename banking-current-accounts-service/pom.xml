@@ -76,6 +76,14 @@
 			<artifactId>mapstruct-processor</artifactId>
 			<version>1.4.2.Final</version>
 		</dependency>
+
+		<!-- adding dependency to commons -->
+		<!-- is this working ? I have no clue ! -->
+		<dependency>
+			<groupId>com.intecbrussel</groupId>
+			<artifactId>commons-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

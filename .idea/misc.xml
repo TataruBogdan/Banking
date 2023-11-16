@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/banking-clients-service/pom.xml" />
         <option value="$PROJECT_DIR$/banking-master/pom.xml" />
         <option value="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-service/pom.xml" />
       </list>
     </option>
   </component>

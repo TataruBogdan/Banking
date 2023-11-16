@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="added map-struct - controller CRUD ops for individual it's working">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/CommonsServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/test/java/com/intecbrussel/commonsservice/CommonsServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +81,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -73,7 +91,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-current-accounts-service",
+    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/commons-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,6 +147,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommonsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="commons-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.intecbrussel.commonsservice.CommonsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BankingClientsServiceApplication" />
@@ -156,7 +182,8 @@
       <workItem from="1700034528441" duration="9988000" />
       <workItem from="1700046107486" duration="232000" />
       <workItem from="1700048885469" duration="93000" />
-      <workItem from="1700049089043" duration="11071000" />
+      <workItem from="1700049089043" duration="11960000" />
+      <workItem from="1700121150658" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -222,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700060601726</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added map-struct - controller CRUD ops for individual it's working">
+      <option name="closed" value="true" />
+      <created>1700060678055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700060678055</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +275,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add banking-clients-service" />
     <MESSAGE value="added map-struct - mapper to convert Data Transfer Objects (DTOs) to entities and vice versa" />
     <MESSAGE value="added map-struct - controller CRUD ops for individual" />

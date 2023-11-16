@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="banking-clients-service" />
+        <module name="commons-service" />
         <module name="bankingapp" />
+        <module name="banking-clients-service" />
         <module name="banking-current-accounts-service" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="banking-clients-service" options="-parameters" />
       <module name="banking-current-accounts-service" options="-parameters" />
       <module name="bankingapp" options="-parameters" />
+      <module name="commons-service" options="-parameters" />
     </option>
   </component>
 </project>
