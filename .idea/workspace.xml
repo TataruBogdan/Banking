@@ -4,26 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="added map-struct - controller CRUD ops for individual it's working">
-      <change afterPath="$PROJECT_DIR$/commons-service.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/CommonsServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-service/src/test/java/com/intecbrussel/commonsservice/CommonsServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up">
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dao/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/service/AccountCurrentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/IndividualDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-service/src/main/java/com/intecbrussel/commonsservice/dto/types/CurrentStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/account/dto/types/CurrentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dto/types/CurrentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/account/model/AccountCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -79,36 +81,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/commons-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3313149",
-    "settings.editor.selected.configurable": "vcs.Subversion.SSH",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3313149&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -116,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingClientsServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -183,7 +190,8 @@
       <workItem from="1700046107486" duration="232000" />
       <workItem from="1700048885469" duration="93000" />
       <workItem from="1700049089043" duration="11960000" />
-      <workItem from="1700121150658" duration="2491000" />
+      <workItem from="1700121150658" duration="15113000" />
+      <workItem from="1700140647077" duration="2673000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -257,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700060678055</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up">
+      <option name="closed" value="true" />
+      <created>1700125764844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700125764844</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +296,8 @@
     <MESSAGE value="added map-struct - mapper to convert Data Transfer Objects (DTOs) to entities and vice versa" />
     <MESSAGE value="added map-struct - controller CRUD ops for individual" />
     <MESSAGE value="added map-struct - controller CRUD ops for individual it's working" />
-    <option name="LAST_COMMIT_MESSAGE" value="added map-struct - controller CRUD ops for individual it's working" />
+    <MESSAGE value="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Commons-service - hope this is working &#10;I have no clue ! So Commit before f***up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,15 +306,6 @@
           <url>file://$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/controller/IndividualController.java</url>
           <line>61</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java</url>
-          <line>32</line>
-          <properties class="com.intecbrussel.bankingclientsservice.clients.dto.IndividualDTO" method="updateWith">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

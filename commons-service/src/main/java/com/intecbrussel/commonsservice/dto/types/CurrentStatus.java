@@ -1,4 +1,4 @@
-package account.dto.types;
+package com.intecbrussel.commonsservice.dto.types;
 
 public enum CurrentStatus {
 

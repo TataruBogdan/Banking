@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="commons-service" />
-        <module name="bankingapp" />
         <module name="banking-clients-service" />
         <module name="banking-current-accounts-service" />
       </profile>
@@ -18,7 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="banking-clients-service" options="-parameters" />
       <module name="banking-current-accounts-service" options="-parameters" />
-      <module name="bankingapp" options="-parameters" />
+      <module name="bankingapp" options="" />
       <module name="commons-service" options="-parameters" />
     </option>
   </component>
