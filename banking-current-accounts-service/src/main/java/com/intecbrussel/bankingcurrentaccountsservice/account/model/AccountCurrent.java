@@ -1,5 +1,5 @@
 package com.intecbrussel.bankingcurrentaccountsservice.account.model;
-;
+
 import com.intecbrussel.bankingcurrentaccountsservice.account.dto.types.CurrentStatus;
 
 import jakarta.persistence.*;

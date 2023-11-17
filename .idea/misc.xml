@@ -9,8 +9,11 @@
         <option value="$PROJECT_DIR$/banking-master/pom.xml" />
         <option value="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" />
         <option value="$PROJECT_DIR$/commons-service/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-lib/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="21" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$" />
+  </component>
 </project>

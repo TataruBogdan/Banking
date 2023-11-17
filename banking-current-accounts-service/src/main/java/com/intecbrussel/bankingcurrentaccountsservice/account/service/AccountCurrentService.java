@@ -1,7 +1,6 @@
 package com.intecbrussel.bankingcurrentaccountsservice.account.service;
 
 import com.intecbrussel.commonsservice.dto.AccountCurrentDTO;
-
 import java.util.List;
 import java.util.Optional;
 

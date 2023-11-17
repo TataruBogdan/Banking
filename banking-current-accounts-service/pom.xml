@@ -31,41 +31,19 @@
 			<version>2.0.2</version>
 		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>com.intecbrussel</groupId>-->
-<!--			<artifactId>commons-service</artifactId>-->
-<!--			<version>0.0.1-SNAPSHOT</version>-->
-<!--			<scope>compile</scope>
-		</dependency>-->
+
 		<dependency>
 			<groupId>com.intecbrussel</groupId>
 			<artifactId>banking-clients-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
-        <dependency>
-            <groupId>com.intecbrussel</groupId>
-            <artifactId>commons-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
 
-
-        <!-- adding dependency to commons -->
-		<!-- is this working ? I have no clue !
 		<dependency>
 			<groupId>com.intecbrussel</groupId>
-			<artifactId>commons-service</artifactId>
+			<artifactId>commons-lib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		-->
-		<!--
-		<dependency>
-			<groupId>com.intecbrussel</groupId>
-			<artifactId>commons-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		-->
 	</dependencies>
 
 

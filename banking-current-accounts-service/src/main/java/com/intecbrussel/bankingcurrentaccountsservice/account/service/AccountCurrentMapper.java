@@ -1,6 +1,7 @@
 package com.intecbrussel.bankingcurrentaccountsservice.account.service;
 
 import com.intecbrussel.bankingcurrentaccountsservice.account.model.AccountCurrent;
+
 import com.intecbrussel.commonsservice.dto.AccountCurrentDTO;
 import org.mapstruct.Mapper;
 
