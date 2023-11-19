@@ -10,7 +10,7 @@
 	</parent>
 	<artifactId>commons-lib</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-<!--	<packaging>jar</packaging>-->
+	<packaging>jar</packaging>
 	<name>commons-lib</name>
 	<description>Banking common library</description>
 	<properties>
