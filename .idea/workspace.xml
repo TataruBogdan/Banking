@@ -4,26 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="Account Current ... is ok + Test">
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/BankingDepositAccountsServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/test/java/com/intecbrussel/bankingdepositaccountsservice/BankingDepositAccountsServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="Account Deposit ... added ...">
+      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/dto/types/DepositStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/model/AccountDeposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/service/DepositAccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/service/DepositAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountDepositDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/DepositStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/documentation/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/dto/IndividualDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/service/IndividualMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/service/IndividualMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/service/impl/IndividualServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/service/impl/IndividualServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/test/java/com/intecbrussel/bankingclientsservice/BankingClientsServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/test/java/com/intecbrussel/bankingclientsservice/BankingClientsServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/Banking" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountCurrentDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +37,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/banking-clients-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -69,7 +72,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -98,7 +101,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-deposit-accounts-service",
     "node.js.detected.package.eslint": "true",
@@ -124,6 +127,7 @@
       <recent name="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intecbrussel.bankingdepositaccountsservice.deposit.dto.types" />
       <recent name="com.intecbrussel.bankingcurrentaccountsservice.account.dto" />
     </key>
   </component>
@@ -134,7 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingClientsServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -215,7 +219,8 @@
       <workItem from="1700408457954" duration="1633000" />
       <workItem from="1700410135472" duration="2575000" />
       <workItem from="1700467377807" duration="5514000" />
-      <workItem from="1700474452339" duration="4172000" />
+      <workItem from="1700474452339" duration="6820000" />
+      <workItem from="1700488141888" duration="5594000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -334,7 +339,8 @@
     <MESSAGE value="Account Current ... to be finished !?&#10;Change to Commons - not a service ...  a library ? because not picked by Spring ? TODO" />
     <MESSAGE value="Account Current ... to be finished !?&#10;Change to Commons - changed to a library" />
     <MESSAGE value="Account Current ... is ok + Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Account Current ... is ok + Test" />
+    <MESSAGE value="Account Deposit ... added ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Account Deposit ... added ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
