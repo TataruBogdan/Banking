@@ -21,11 +21,17 @@ public class AccountCurrent {
     @NotNull
     @Column(name = "iban", unique = true)
     private String iban;
-    private Double balance;
-    private Integer individualId;
-    private LocalDateTime startDate;
+    // do I need aldo account_type ????
 
+    @Column(name = "balance")
+    private Double balance;
+    @Column(name = "individual_id")
+    private Integer individualId;
+    @Column(name = "start_date")
+    private LocalDateTime startDate;
     @Enumerated(EnumType.STRING)
+    @Column(name = "account_current_status")
     private CurrentStatus currentStatus;
+    @Column(name = "primary_account")
     private boolean primaryAccount;
 }

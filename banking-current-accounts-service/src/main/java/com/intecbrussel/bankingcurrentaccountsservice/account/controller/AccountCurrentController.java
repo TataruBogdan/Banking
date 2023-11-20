@@ -72,10 +72,8 @@ public class AccountCurrentController {
 
         Optional<AccountCurrentDTO> accountCurrentDTO = accountCurrentService.getByIban(iban);
 
-
         IndividualDTO individualDTOById = individualRestClient.getIndividualById(accountCurrentDTO.get().getIndividualId());
 
-        String fromIban = accountCurrentDTO.get().getIban();
         //credit the value from AccountCurrent with the value from transaction -> go to debit
         AccountCurrentDTO creditBalanceAccount = accountCurrentService.creditBalanceAccount(iban, amount.getAmount());
         creditBalanceAccount.setIndividual(individualDTOById);
