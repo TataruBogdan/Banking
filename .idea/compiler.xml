@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="banking-deposit-accounts-service" />
         <module name="banking-clients-service" />
         <module name="banking-current-accounts-service" />
         <module name="commons-lib" />
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="banking-clients-service" options="-parameters" />
       <module name="banking-current-accounts-service" options="-parameters" />
+      <module name="banking-deposit-accounts-service" options="-parameters" />
       <module name="bankingapp" options="" />
       <module name="commons-lib" options="-parameters" />
     </option>
