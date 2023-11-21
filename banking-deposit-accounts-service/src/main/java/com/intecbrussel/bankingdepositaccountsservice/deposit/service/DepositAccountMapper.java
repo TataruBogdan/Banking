@@ -7,6 +7,7 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface DepositAccountMapper {
 
-    AccountDepositDTO accountToDTO(AccountDeposit accountDeposit);
+    AccountDepositDTO accountDepositToDTO(AccountDeposit accountDeposit);
+    AccountDeposit toAccountDeposit (AccountDepositDTO accountDepositDTO);
 
 }

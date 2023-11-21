@@ -14,8 +14,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static com.intecbrussel.bankingcurrentaccountsservice.account.dto.types.CurrentStatus.ACTIVE;
+
 import static com.intecbrussel.commonsservice.dto.idGen.idGenerator.idGen;
+import static com.intecbrussel.commonsservice.dto.types.CurrentStatus.ACTIVE;
 
 @RequiredArgsConstructor
 @Service

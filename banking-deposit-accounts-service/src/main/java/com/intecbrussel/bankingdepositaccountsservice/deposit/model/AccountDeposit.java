@@ -1,6 +1,6 @@
 package com.intecbrussel.bankingdepositaccountsservice.deposit.model;
 
-import com.intecbrussel.commonsservice.dto.types.CurrentStatus;
+import com.intecbrussel.commonsservice.dto.types.DepositStatus;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -40,6 +40,6 @@ public class AccountDeposit {
     @Column(name = " start_date")
     private LocalDateTime startDate;
     @Column(name = "status")
-    private CurrentStatus status;
+    private DepositStatus status;
 
 }

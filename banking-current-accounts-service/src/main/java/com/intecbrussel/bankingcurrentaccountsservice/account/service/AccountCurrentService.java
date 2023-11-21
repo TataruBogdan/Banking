@@ -12,7 +12,6 @@ public interface AccountCurrentService {
     AccountCurrentDTO updateBalanceAccount(String iban, Double balance);
     AccountCurrentDTO creditBalanceAccount(String iban, Double balance);
     AccountCurrentDTO debitBalanceAccount(String iban, Double balance);
-
     AccountCurrentDTO createIndividualAccount(int individualId);
     void deleteAccountByIban(String iban);
 }

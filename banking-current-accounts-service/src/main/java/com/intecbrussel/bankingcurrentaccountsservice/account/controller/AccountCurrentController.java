@@ -111,11 +111,11 @@ public class AccountCurrentController {
         return ResponseEntity.ok(accountCurrentServiceByIndividual);
     }
 
-    @PostMapping(value = "/create-account/individuals/{individualId}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE )
-    public ResponseEntity<AccountCurrentDTO> createAccountCurrent(@PathVariable("individualId") int individualId){
+    @PostMapping(value = "/create-account/individual/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE )
+    public ResponseEntity<AccountCurrentDTO> createAccountCurrent(@PathVariable("id") int id){
 
-        AccountCurrentDTO individualAccount = accountCurrentService.createIndividualAccount(individualId);
-        IndividualDTO individualDTOById = individualRestClient.getIndividualById(individualId);
+        AccountCurrentDTO individualAccount = accountCurrentService.createIndividualAccount(id);
+        IndividualDTO individualDTOById = individualRestClient.getIndividualById(id);
 
         individualAccount.setIndividual(individualDTOById);
 
