@@ -39,7 +39,7 @@ public class AccountDeposit {
     private String maturityIban;
     @Column(name = " start_date")
     private LocalDateTime startDate;
-    @Column(name = "status")
+    @Column(name = "deposit_status")
     private DepositStatus status;
 
 }

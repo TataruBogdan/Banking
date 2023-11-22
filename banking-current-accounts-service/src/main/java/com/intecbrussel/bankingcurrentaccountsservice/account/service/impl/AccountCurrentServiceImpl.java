@@ -23,10 +23,10 @@ import static com.intecbrussel.commonsservice.dto.types.CurrentStatus.ACTIVE;
 public class AccountCurrentServiceImpl implements AccountCurrentService {
 
     @Autowired
-    private final AccountRepository accountRepository;
+    private AccountRepository accountRepository;
 
     @Autowired
-    private final AccountCurrentMapper accountCurrentMapper;
+    private AccountCurrentMapper accountCurrentMapper;
     @Override
     public List<AccountCurrentDTO> getAll() {
         return accountRepository.findAll()

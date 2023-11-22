@@ -34,15 +34,16 @@ public class AccountDepositController {
 
         List<AccountDepositDTO> accountDepositDTOList = depositAccountService.getAll();
         if (accountDepositDTOList.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        } else {
+            List<AccountDepositDTO> newAccountDepositDTOList = new ArrayList<>();
+            for (AccountDepositDTO accountDeposit: accountDepositDTOList) {
+                IndividualDTO individualDTO = individualRestClient.getIndividualById(accountDeposit.getIndividualId());
+                accountDeposit.setIndividualDTO(individualDTO);
+                newAccountDepositDTOList.add(accountDeposit);
+            }
+            return ResponseEntity.ok(newAccountDepositDTOList);
         }
-
-        List<AccountDepositDTO> newAccountDepositDTOList = new ArrayList<>();
-        for (AccountDepositDTO accountDeposit: accountDepositDTOList) {
-            IndividualDTO individualDTO = individualRestClient.getIndividualById(accountDeposit.getIndividualId());
-            accountDeposit.setIndividualDTO(individualDTO);
-        }
-        return ResponseEntity.ok(newAccountDepositDTOList);
     }
 
     @GetMapping("/accounts-deposit/{iban}")
@@ -72,7 +73,7 @@ public class AccountDepositController {
         return ResponseEntity.ok(depositsAccountsAllByIndividualId);
     }
 
-    @PostMapping(value = "/create-deposit/individual/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/create-account-deposit/individual/{id}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<AccountDepositDTO> createAccountDepositForIndividual(@PathVariable("id") int id, @RequestBody ArgsDTO argsDTO) {
         AccountDepositDTO individualAccountDeposit = depositAccountService.createIndividualAccountDeposit(id, argsDTO.getMonths(), argsDTO.getAmount());
         IndividualDTO individualDTO = individualRestClient.getIndividualById(id);

@@ -15,9 +15,9 @@ public class AccountDepositDTO {
     private double depositAmount;
     private double balance;
     private int individualId;
+    private double interestRate;
     private LocalDate maturityDate;
     private int maturityMonths;
-    private double interestRate;
     private boolean selfCapitalization;
     private String maturityIban;
     private LocalDateTime startDate;
