@@ -1,4 +1,4 @@
-package com.intecbrussel.bankingcurrentaccountsservice.account.controller.client;
+package com.intecbrussel.bankingloansservice.loan.controller.client;
 
 import com.intecbrussel.commonsservice.dto.IndividualDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,6 @@ public class IndividualRestClient {
     private RestTemplate restTemplate;
 
     public IndividualDTO getIndividualById(Integer id) {
-
         return restTemplate.getForObject("http://localhost:8100/individuals/" + id, IndividualDTO.class);
     }
 }

@@ -5,9 +5,410 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping">
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/BankingLoansServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/client/IndividualRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/dao/LoanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/AccountLoanMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/AccountLoanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/test/java/com/intecbrussel/bankingloansservice/BankingLoansServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16446" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16453" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24633" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24636" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24638" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24639" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/112" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/113" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1247_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1247_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1249_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1249_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1255" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1255_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1255_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1259" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1259_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1259_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13316" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13316_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13316_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13318" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13320" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13321" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13321_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13321_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13323" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13325" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13326" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13326_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13326_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13328" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13330" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13331" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13331_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13331_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13333" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13335" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13336" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13336_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13336_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13338" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13340" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13341" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13341_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13341_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13343" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13345" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13346" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13348" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/13350" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1417" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/175" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2187" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2328" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2336" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2337" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2579" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2600_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2601_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2602_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2603_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2603_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2605_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2605_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2606_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2606_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2607_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2607_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2608_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2608_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2609_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2609_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2610" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2610_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2610_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2611" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2612" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2612_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2612_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2613" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2615" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2615_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2615_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2616" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2616_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2616_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2617" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2617_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2617_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2618" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2618_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2618_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2619" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2619_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2619_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2620" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2650" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2651" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2652" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2653" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2654" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2655" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2656" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2657" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2658" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2659" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2660" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2661" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2663" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2664" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2665" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2666" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2667" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2668" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2669" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2670" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2673" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2674" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2675" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2678" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2679" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2680" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2681" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2682" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2683" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2684" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2686" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2687" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2688" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2689" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2690" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2691" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2692" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2693" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2696" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2699" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2701" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2702" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2703" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2704" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2753" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2753_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2753_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2754" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2755" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2756" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2757" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2830" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2831" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2832" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2833" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2834" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2835" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2837" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2838" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2838_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2838_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2839" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2840" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2840_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2840_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2995" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/2996" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3079_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3079_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3080" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3081" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3085" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3118" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3256" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3257" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3258" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3350" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3351" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3394" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3394_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3394_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3395" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3429" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3430" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3431" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3433" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3439" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3440" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3455" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3456" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3456_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3456_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3501" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3502" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3503" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3534" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3541" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3541_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3541_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3542" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3574" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3575" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3576" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3596" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3597" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3598" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3600_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3601_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3602_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3603_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3603_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3712" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3764" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3764_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3764_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3766" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3767" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/3997" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4144" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4146" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4148" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4149" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4150" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4151" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4152" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4153" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4154" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4155" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4156" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4157" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4158" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4159" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4160" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4161" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4162" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4163" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4165" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4166" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4167" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4168" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4169" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4170" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4171" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4172" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4173" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/4174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/5002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/548" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/549" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6104" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6110" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6112" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6113" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/6117" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/826" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/827" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/828" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/PG_VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/pg_filenode.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/LoanStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/client/IndividualRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/client/IndividualRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16385" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16424" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16388" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16450" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16390" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16426" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16391" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16452" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2224" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2224" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2579" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2604" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2606" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2610" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2620" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2656" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2657" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2658" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2662" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2663" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2664" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2665" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2666" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2667" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2673" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2674" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2678" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2699" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2699" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2701" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2701" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2702" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2702" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2703" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2704" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3501" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3501" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3502" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3502" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3503" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3503" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3534" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3534" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/5002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/1262" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/1262" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2396" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2396" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2671" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2671" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2672" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2672" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_0.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_13481.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_16384.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/global.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +454,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -67,41 +468,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/banking-deposit-accounts-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3548951&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path": "/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-loans-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3548951",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dto" />
@@ -119,7 +520,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingLoansServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -146,6 +547,14 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-deposit-accounts-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.intecbrussel.bankingdepositaccountsservice.BankingDepositAccountsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankingLoansServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="banking-loans-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.intecbrussel.bankingloansservice.BankingLoansServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,6 +615,7 @@
       <workItem from="1700639280284" duration="12174000" />
       <workItem from="1700653930905" duration="7624000" />
       <workItem from="1700662079079" duration="4942000" />
+      <workItem from="1700725977827" duration="10455000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
