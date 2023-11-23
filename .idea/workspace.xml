@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping">
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/BankingLoansServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/client/IndividualRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/dao/LoanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/AccountLoanMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/AccountLoanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-loans-service/src/test/java/com/intecbrussel/bankingloansservice/BankingLoansServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="AccountLoan - TODO">
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -337,17 +319,11 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_0.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/LoanStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-clients-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/client/IndividualRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/client/IndividualRestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
@@ -408,7 +384,7 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -454,7 +430,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -615,7 +591,7 @@
       <workItem from="1700639280284" duration="12174000" />
       <workItem from="1700653930905" duration="7624000" />
       <workItem from="1700662079079" duration="4942000" />
-      <workItem from="1700725977827" duration="10455000" />
+      <workItem from="1700725977827" duration="20773000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -738,7 +714,8 @@
     <MESSAGE value="Resolve dependencies" />
     <MESSAGE value="Controller DepositAccount - TODO - bean not found ?!" />
     <MESSAGE value="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping" />
+    <MESSAGE value="AccountLoan - TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="AccountLoan - TODO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -767,6 +744,16 @@
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
           <line>34</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>

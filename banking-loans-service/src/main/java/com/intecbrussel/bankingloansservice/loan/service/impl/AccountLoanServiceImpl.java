@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -54,7 +55,7 @@ public class AccountLoanServiceImpl implements AccountLoanService {
     @Override
     public AccountLoanDTO createIndividualAccountLoan(int individualId, int period, double amount) {
         AccountLoan accountLoan = new AccountLoan();
-        accountLoan.setIban(idGen("Loan"));
+        accountLoan.setIban(idGen("LOAN"));
         accountLoan.setIndividualId(individualId);
         accountLoan.setLoanAmount(amount);
         accountLoan.setPeriod(period);

@@ -6,8 +6,10 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.time.LocalDateTime;
+import java.time.Period;
 
 
 @AllArgsConstructor
@@ -24,7 +26,7 @@ public class AccountLoan {
     private double loanAmount;
     @Column(name = "individual_id")
     private int individualId;
-    @Column(name = "period", nullable = false)
+    @Column(name = "period", nullable = false, columnDefinition = "interval")
     private int period;
     @Column(name = "interest_rate")
     private double interestRate;

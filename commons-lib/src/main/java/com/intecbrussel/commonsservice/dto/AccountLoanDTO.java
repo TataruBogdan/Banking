@@ -4,6 +4,7 @@ import com.intecbrussel.commonsservice.dto.types.LoanStatus;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.time.Period;
 
 @Data
 public class AccountLoanDTO {

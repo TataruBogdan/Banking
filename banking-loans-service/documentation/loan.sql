@@ -1,3 +1,6 @@
+
+CREATE TYPE loan_status AS ENUM('ACTIVE', 'CLOSED');
+
 CREATE TABLE loan(
     iban text PRIMARY KEY,
     loan_amount NUMERIC(10,2) not null DEFAULT 0,
