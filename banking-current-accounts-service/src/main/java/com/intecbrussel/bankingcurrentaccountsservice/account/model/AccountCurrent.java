@@ -21,7 +21,6 @@ public class AccountCurrent {
     @Column(name = "iban", unique = true)
     private String iban;
     // do I need aldo account_type ????
-
     @Column(name = "balance")
     private Double balance;
     @Column(name = "individual_id")

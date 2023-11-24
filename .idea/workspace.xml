@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="AccountLoan - TODO">
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="AccountLoan - ok">
+      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/documentation/account_current.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -14,6 +15,10 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24636" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24638" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24639" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24665" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24668" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24670" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24671" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/112" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/113" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1247" afterDir="false" />
@@ -317,13 +322,33 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/PG_VERSION" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/pg_filenode.map" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/documentation/transactions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/BankingTransactionsServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/config/ApplicationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/dao/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/test/java/com/intecbrussel/bankingtransactionsservice/BankingTransactionsServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/TransactionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/TransactionStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/documentation/loan.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/model/AccountLoan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/service/impl/AccountLoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
@@ -370,13 +395,13 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3503" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3503" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3534" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3534" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/5002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/1262" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/1262" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2396" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2396" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2671" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2671" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2672" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/2672" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/global/pg_internal.init" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_0.stat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_13481.stat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat/db_16384.stat" beforeDir="false" />
@@ -384,7 +409,6 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountLoanDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +485,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-loans-service",
+    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-transactions-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -496,7 +520,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingLoansServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -531,6 +555,14 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-loans-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.intecbrussel.bankingloansservice.BankingLoansServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankingTransactionsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="banking-transactions-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.intecbrussel.bankingtransactionsservice.BankingTransactionsServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -591,7 +623,8 @@
       <workItem from="1700639280284" duration="12174000" />
       <workItem from="1700653930905" duration="7624000" />
       <workItem from="1700662079079" duration="4942000" />
-      <workItem from="1700725977827" duration="20773000" />
+      <workItem from="1700725977827" duration="21668000" />
+      <workItem from="1700828670759" duration="11753000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -715,7 +748,8 @@
     <MESSAGE value="Controller DepositAccount - TODO - bean not found ?!" />
     <MESSAGE value="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping" />
     <MESSAGE value="AccountLoan - TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="AccountLoan - TODO" />
+    <MESSAGE value="AccountLoan - ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="AccountLoan - ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -724,16 +758,6 @@
           <url>file://$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/controller/IndividualController.java</url>
           <line>61</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/service/impl/AccountDepositServiceImpl.java</url>

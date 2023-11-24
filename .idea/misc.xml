@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/commons-lib/pom.xml" />
         <option value="$PROJECT_DIR$/banking-deposit-accounts-service/pom.xml" />
         <option value="$PROJECT_DIR$/banking-loans-service/pom.xml" />
+        <option value="$PROJECT_DIR$/banking-transactions-service/pom.xml" />
       </list>
     </option>
   </component>
