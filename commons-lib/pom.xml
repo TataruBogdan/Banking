@@ -52,8 +52,16 @@
 			<artifactId>mapstruct-processor</artifactId>
 			<version>1.5.5.Final</version>
 		</dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="AccountLoan - ok">
-      <change afterPath="$PROJECT_DIR$/banking-current-accounts-service/documentation/account_current.sql" afterDir="false" />
+    <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="Transaction - Still TODO">
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -325,30 +324,14 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/documentation/transactions.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/BankingTransactionsServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/config/ApplicationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/dao/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/test/java/com/intecbrussel/bankingtransactionsservice/BankingTransactionsServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/TransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/TransactionStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountCurrentRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountDepositRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountIndividualRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountLoanRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/idGen/IbanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/impl/TransactionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/model/AccountCurrent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
@@ -409,6 +392,11 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/dao/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/dao/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/AccountType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -468,41 +456,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path": "/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-transactions-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3548951",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/banking-transactions-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3548951&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dto" />
@@ -624,7 +612,9 @@
       <workItem from="1700653930905" duration="7624000" />
       <workItem from="1700662079079" duration="4942000" />
       <workItem from="1700725977827" duration="21668000" />
-      <workItem from="1700828670759" duration="11753000" />
+      <workItem from="1700828670759" duration="12199000" />
+      <workItem from="1701015247644" duration="935000" />
+      <workItem from="1701078072207" duration="4440000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -749,7 +739,8 @@
     <MESSAGE value="DepositAccount - it's working&#10;AccountCurrent - not working - problem mapping" />
     <MESSAGE value="AccountLoan - TODO" />
     <MESSAGE value="AccountLoan - ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="AccountLoan - ok" />
+    <MESSAGE value="Transaction - Still TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transaction - Still TODO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
