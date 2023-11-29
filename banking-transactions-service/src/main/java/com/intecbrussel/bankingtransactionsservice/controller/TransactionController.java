@@ -1,5 +1,9 @@
-package com.intecbrussel.bankingtransactionsservice.controller.client;
+package com.intecbrussel.bankingtransactionsservice.controller;
 
+import com.intecbrussel.bankingtransactionsservice.controller.client.AccountCurrentRestClient;
+import com.intecbrussel.bankingtransactionsservice.controller.client.AccountDepositRestClient;
+import com.intecbrussel.bankingtransactionsservice.controller.client.AccountIndividualRestClient;
+import com.intecbrussel.bankingtransactionsservice.controller.client.AccountLoanRestClient;
 import com.intecbrussel.bankingtransactionsservice.service.TransactionService;
 import com.intecbrussel.commonsservice.dto.*;
 import com.intecbrussel.commonsservice.dto.types.AccountType;
@@ -19,10 +23,9 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
 @RequiredArgsConstructor
-@RestControllerAdvice
+@RestController
 @RequestMapping("/transactions")
 public class TransactionController {
-
 
     @Autowired
     private TransactionService transactionService;
@@ -57,14 +60,16 @@ public class TransactionController {
             case DEPOSIT: {
                 AccountDepositDTO accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(fromIban);
                 fromIndividualDTO = accountDepositByIban.getIndividualDTO();
+                break;
             }
             case LOAN: {
                 AccountLoanDTO accountLoanByIban = accountLoanRestClient.getAccountLoanByIban(fromIban);
                 fromIndividualDTO = accountLoanByIban.getIndividualDTO();
+                break;
             }
             default: {
                 // Handle default case if needed, currently returns null
-                return null;
+                return ResponseEntity.notFound().build();
             }
         }
 
@@ -77,13 +82,15 @@ public class TransactionController {
             case DEPOSIT: {
                 AccountDepositDTO accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(toIban);
                 toIndividualDTO = accountDepositByIban.getIndividualDTO();
+                break;
             }
             case LOAN: {
                 AccountLoanDTO accountLoanByIban = accountLoanRestClient.getAccountLoanByIban(toIban);
                 toIndividualDTO = accountLoanByIban.getIndividualDTO();
+                break;
             }
             default: {
-                return null;
+                return ResponseEntity.notFound().build();
             }
         }
         TransactionDTO transaction = transactionService.createTransaction(
@@ -112,6 +119,63 @@ public class TransactionController {
         }
     }
 
+    @PatchMapping(value = "/execute/{transactionId}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+    public ResponseEntity<TransactionDTO> executeTransaction(@PathVariable("transactionId") String transactionId) {
+
+        IndividualDTO fromIndividualDTO = null;
+        IndividualDTO toIndividualDTO = null;
+
+        Optional<TransactionDTO> transactionByIdDTO = transactionService.getTransactionById(transactionId);
+
+        if (transactionByIdDTO.isPresent()) {
+
+            fromIndividualDTO = accountIndividualRestClient.getIndividualById(transactionByIdDTO.get().getFromIndividualId());
+
+            Double transactionAmount = transactionByIdDTO.get().getTransactionAmount();
+
+            String fromIban = transactionByIdDTO.get().getFromIban();
+            String toIban = transactionByIdDTO.get().getToIban();
+
+            if (parseTypeStringIban(fromIban) == AccountType.CURRENT) {
+
+                ResponseEntity<AccountCurrentDTO> debitAccountCurrent = accountCurrentRestClient.debitAccountCurrent(fromIban, transactionAmount);
+                IndividualDTO individualFromAccountCurrent = debitAccountCurrent.getBody().getIndividual();
+
+                debitAccountCurrent.getBody().setIndividual(fromIndividualDTO);
+            } else {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            }
+
+            switch (parseTypeStringIban(toIban)) {
+                case CURRENT: {
+                    toIndividualDTO = accountIndividualRestClient.getIndividualById(transactionByIdDTO.get().getToIndividualId());
+                    ResponseEntity<AccountCurrentDTO> creditAccountCurrent = accountCurrentRestClient.creditAccountCurrent(toIban, transactionAmount);
+                    creditAccountCurrent.getBody().setIndividual(toIndividualDTO);
+                    break;
+                }
+                case DEPOSIT: {
+                    toIndividualDTO = accountIndividualRestClient.getIndividualById(transactionByIdDTO.get().getToIndividualId());
+                    AccountDepositDTO accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(toIban);
+                    accountDepositByIban.setIndividualDTO(toIndividualDTO);
+                    int maturityMonths = accountDepositByIban.getMaturityMonths();
+                    accountDepositRestClient.createNewAccountDepositForIndividual(toIndividualDTO, maturityMonths, transactionAmount);
+                    break;
+                }
+            }
+        }
+
+        if (transactionByIdDTO.isPresent()) {
+            transactionByIdDTO.get().setStatus(TransactionStatus.FINISHED);
+            transactionByIdDTO.get().setFromIndividualDTO(fromIndividualDTO);
+            transactionByIdDTO.get().setToIndividualDTO(toIndividualDTO);
+            return ResponseEntity.status(HttpStatus.OK).body(transactionByIdDTO.get());
+        }
+
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+
+
+    }
+
     //return only id transaction with status
     @PostMapping(value = "/search-by-status", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<SearchTransactionsResponseDTO> getAllTransactionsWithStatus(@RequestBody TransactionSearchInputDTO statuses) {
@@ -127,39 +191,6 @@ public class TransactionController {
         return ResponseEntity.ok(searchTransactionsResponseDTO);
     }
 
-    public ResponseEntity<TransactionDTO> executeTransaction(@PathVariable("transactionId") String transactionId) {
 
-        Optional<TransactionDTO> transactionById = transactionService.getTransactionById(transactionId);
-        IndividualDTO fromIndividualDTO = transactionById.get().getFromIndividualDTO();
-        Integer fromIndividualDTOId = fromIndividualDTO.getId();
-        System.out.println(fromIndividualDTOId);
-
-        IndividualDTO toIndividualDTO = transactionById.get().getToIndividualDTO();
-        Double transactionAmount = transactionById.get().getTransactionAmount();
-        String fromIban = transactionById.get().getFromIban();
-        String toIban = transactionById.get().getToIban();
-
-        if (Objects.requireNonNull(parseTypeStringIban(fromIban)) == AccountType.CURRENT) {
-            ResponseEntity<AccountCurrentDTO> debitAccountCurrent = accountCurrentRestClient.debitAccountCurrent(fromIban, transactionAmount);
-            debitAccountCurrent.getBody().setIndividual(fromIndividualDTO);
-        }
-
-        switch (Objects.requireNonNull(parseTypeStringIban(toIban))) {
-            case CURRENT: {
-                ResponseEntity<AccountCurrentDTO> creditAccountCurrent = accountCurrentRestClient.creditAccountCurrent(toIban, transactionAmount);
-                creditAccountCurrent.getBody().setIndividual(toIndividualDTO);
-            }
-            case DEPOSIT: {
-                AccountDepositDTO accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(toIban);
-                int maturityMonths = accountDepositByIban.getMaturityMonths();
-                accountDepositRestClient.createNewAccountDepositForIndividual(toIndividualDTO, maturityMonths, transactionAmount);
-            }
-        }
-
-        transactionById.get().setStatus(TransactionStatus.FINISHED);
-        return ResponseEntity.status(HttpStatus.OK).body(transactionById.get());
-
-
-    }
 
 }

@@ -19,7 +19,7 @@ public class AccountCurrentRestClient {
 
     public AccountCurrentDTO getAccountCurrentByIban(String iban) {
         AccountCurrentDTO accountCurrentDTO = currentRestTemplate.getForObject(
-                applicationProperties.getAccountCurrentUrl() + iban, AccountCurrentDTO.class);
+                applicationProperties.getAccountCurrentUrl()+ "/" + iban, AccountCurrentDTO.class);
         return accountCurrentDTO;
     }
 
@@ -46,7 +46,7 @@ public class AccountCurrentRestClient {
 
         ResponseEntity<AccountCurrentDTO> accountCurrentFromIbanDTOResponseEntity =
                 currentRestTemplate.exchange("http://localhost:8200/account-current/debit/" + iban,
-                        HttpMethod.PATCH,requestEntity, AccountCurrentDTO.class);
+                        HttpMethod.PATCH, requestEntity, AccountCurrentDTO.class);
         return accountCurrentFromIbanDTOResponseEntity;
     }
 

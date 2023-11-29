@@ -15,8 +15,10 @@ FROM pg_enum e
 --account este contul : account_current, account_deposit, account_loan ???
 CREATE TABLE transaction (
          transaction_id text PRIMARY KEY,
+         from_individual_id INTEGER,
          from_iban text,
          from_account_type account_type,
+         to_individual_id INTEGER,
          to_iban text,
          to_account_type account_type,
          transaction_amount INTEGER,

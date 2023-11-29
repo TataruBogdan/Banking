@@ -38,8 +38,7 @@ public class Transaction {
     @Column(name = "transaction_timestamp")
     private LocalDateTime transactionTime;
     @Enumerated(EnumType.STRING)
-    @Column(name = "transaction_status")
+    @Column(name = "status")
     private TransactionStatus status;
-
 
 }

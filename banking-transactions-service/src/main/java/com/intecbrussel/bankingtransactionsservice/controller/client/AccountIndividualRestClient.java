@@ -12,12 +12,13 @@ public class AccountIndividualRestClient {
 
     @Autowired
     private RestTemplate individualRestTemplate;
+
     @Autowired
     private ApplicationProperties applicationProperties;
 
     public IndividualDTO getIndividualById(Integer id) {
         IndividualDTO individualDTO = individualRestTemplate.getForObject(
-                applicationProperties.getIndividualUrl() + id, IndividualDTO.class
+                applicationProperties.getIndividualUrl() + "/" + id, IndividualDTO.class
         );
         return individualDTO;
     }

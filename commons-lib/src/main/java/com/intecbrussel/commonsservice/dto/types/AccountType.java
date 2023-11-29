@@ -1,6 +1,5 @@
 package com.intecbrussel.commonsservice.dto.types;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import org.springframework.util.StringUtils;
 

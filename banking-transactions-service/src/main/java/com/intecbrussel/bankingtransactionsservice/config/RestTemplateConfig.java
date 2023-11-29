@@ -1,5 +1,6 @@
 package com.intecbrussel.bankingtransactionsservice.config;
 
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -11,7 +12,8 @@ public class RestTemplateConfig {
     This can be especially useful in scenarios where you need fine-grained control over your HTTP requests or when
     you want to take advantage of specific features provided by the Apache HttpClient library.*/
     @Bean
-    public RestTemplate createRestTemplate(){
-        return new RestTemplate(new HttpComponentsClientHttpRequestFactory());
+    public RestTemplate createRestTemplate(RestTemplateBuilder builder){
+        return builder.build();
+        //return new RestTemplate(new HttpComponentsClientHttpRequestFactory());
     }
 }
