@@ -13,7 +13,13 @@ public class RestTemplateConfig {
     you want to take advantage of specific features provided by the Apache HttpClient library.*/
     @Bean
     public RestTemplate createRestTemplate(RestTemplateBuilder builder){
-        return builder.build();
+        HttpComponentsClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory();
+        requestFactory.setConnectTimeout(10000);
+
+        RestTemplate restTemplate = builder.build();
+        restTemplate.setRequestFactory(requestFactory);
+
+        return restTemplate;
         //return new RestTemplate(new HttpComponentsClientHttpRequestFactory());
     }
 }

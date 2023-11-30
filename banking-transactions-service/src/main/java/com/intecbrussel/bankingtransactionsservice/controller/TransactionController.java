@@ -4,6 +4,7 @@ import com.intecbrussel.bankingtransactionsservice.controller.client.AccountCurr
 import com.intecbrussel.bankingtransactionsservice.controller.client.AccountDepositRestClient;
 import com.intecbrussel.bankingtransactionsservice.controller.client.AccountIndividualRestClient;
 import com.intecbrussel.bankingtransactionsservice.controller.client.AccountLoanRestClient;
+import com.intecbrussel.bankingtransactionsservice.dao.TransactionRepository;
 import com.intecbrussel.bankingtransactionsservice.service.TransactionService;
 import com.intecbrussel.commonsservice.dto.*;
 import com.intecbrussel.commonsservice.dto.types.AccountType;
@@ -29,6 +30,7 @@ public class TransactionController {
 
     @Autowired
     private TransactionService transactionService;
+
 
     @Autowired
     private AccountIndividualRestClient accountIndividualRestClient;
@@ -139,7 +141,6 @@ public class TransactionController {
             if (parseTypeStringIban(fromIban) == AccountType.CURRENT) {
 
                 ResponseEntity<AccountCurrentDTO> debitAccountCurrent = accountCurrentRestClient.debitAccountCurrent(fromIban, transactionAmount);
-                IndividualDTO individualFromAccountCurrent = debitAccountCurrent.getBody().getIndividual();
 
                 debitAccountCurrent.getBody().setIndividual(fromIndividualDTO);
             } else {
@@ -156,7 +157,14 @@ public class TransactionController {
                 case DEPOSIT: {
                     toIndividualDTO = accountIndividualRestClient.getIndividualById(transactionByIdDTO.get().getToIndividualId());
                     AccountDepositDTO accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(toIban);
+                    //IF ACCOUNT DEPOSIT EXISTS THEN ONLY CREDIT THE ACCOUNT
+                    // if doesn't exist the create a new deposit account
                     accountDepositByIban.setIndividualDTO(toIndividualDTO);
+                    if (accountDepositByIban.isSelfCapitalization()){
+                        // accountDepositRestClient.debitAccountDebit(toIban, transactionAmount);
+                    } else {
+
+                    }
                     int maturityMonths = accountDepositByIban.getMaturityMonths();
                     accountDepositRestClient.createNewAccountDepositForIndividual(toIndividualDTO, maturityMonths, transactionAmount);
                     break;
@@ -166,14 +174,13 @@ public class TransactionController {
 
         if (transactionByIdDTO.isPresent()) {
             transactionByIdDTO.get().setStatus(TransactionStatus.FINISHED);
+            transactionService.updateTransactionIdTransactionStatus(transactionByIdDTO.get().getTransactionId(), TransactionStatus.FINISHED);
             transactionByIdDTO.get().setFromIndividualDTO(fromIndividualDTO);
             transactionByIdDTO.get().setToIndividualDTO(toIndividualDTO);
             return ResponseEntity.status(HttpStatus.OK).body(transactionByIdDTO.get());
         }
 
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-
-
     }
 
     //return only id transaction with status
@@ -190,7 +197,5 @@ public class TransactionController {
 
         return ResponseEntity.ok(searchTransactionsResponseDTO);
     }
-
-
 
 }

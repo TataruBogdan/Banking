@@ -56,6 +56,20 @@ public class TransactionServiceImpl implements TransactionService {
                 .collect(Collectors.toList());
 
         return transactionRepository.findTransactionByTransactionStatusList(stringStatusesToList);
-
     }
+
+    @Override
+    public Optional<TransactionDTO> updateTransactionIdTransactionStatus(String transactionId, TransactionStatus status) {
+        Optional<Transaction> transactionRepositoryById = transactionRepository.findById(transactionId);
+
+        if (transactionRepositoryById.isPresent()){
+            transactionRepositoryById.get().setStatus(TransactionStatus.FINISHED);
+            Transaction savedTransaction = transactionRepository.save(transactionRepositoryById.get());
+            return Optional.ofNullable(transactionMapper.transactionToDTO(savedTransaction));
+        } else {
+            return Optional.empty();
+        }
+    }
+
+
 }

@@ -25,7 +25,7 @@ public class AccountDepositRestClient {
 
     public AccountDepositDTO getAccountDepositByIban(String iban){
         AccountDepositDTO accountDepositDTO = depositRestTemplate.getForObject(
-          applicationProperties.getAccountsDepositUrl() + iban, AccountDepositDTO.class
+          applicationProperties.getAccountsDepositUrl()+ "/" + iban, AccountDepositDTO.class
         );
         return accountDepositDTO;
     }

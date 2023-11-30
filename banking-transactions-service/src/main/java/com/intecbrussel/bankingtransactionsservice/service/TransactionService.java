@@ -18,4 +18,6 @@ public interface TransactionService {
     Optional<TransactionDTO> getTransactionById(String transactionId);
 
     List<String> getAllTransactionsFindTransactionsStatus(List<TransactionStatus> statuses);
+
+    Optional<TransactionDTO> updateTransactionIdTransactionStatus(String transactionId, TransactionStatus status);
 }
