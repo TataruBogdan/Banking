@@ -53,6 +53,30 @@ public class AccountDepositServiceImpl implements DepositAccountService {
     }
 
     @Override
+    public AccountDepositDTO updateBalanceDeposit(String iban, Double balance) {
+        AccountDeposit depositAccount = depositRepository.getReferenceById(iban);
+        depositAccount.setBalance(balance);
+        AccountDeposit savedDeposit = depositRepository.save(depositAccount);
+
+        return depositAccountMapper.accountDepositToDTO(savedDeposit);
+    }
+
+//    @Override
+//    public AccountDepositDTO creditBalanceDeposit(String iban, Double balance) {
+//        return null;
+//    }
+
+    @Override
+    public AccountDepositDTO debitBalanceDeposit(String iban, Double balance) {
+        AccountDeposit depositAccount = depositRepository.getReferenceById(iban);
+        double currentBalance = depositAccount.getBalance();
+        depositAccount.setBalance(currentBalance - balance);
+        AccountDeposit savedAccountDeposit = depositRepository.save(depositAccount);
+
+        return depositAccountMapper.accountDepositToDTO(savedAccountDeposit);
+    }
+
+    @Override
     public AccountDepositDTO createIndividualAccountDeposit(int individualId, int months, double amount) {
         AccountDeposit accountDeposit = new AccountDeposit();
         accountDeposit.setIban(idGen("DEP"));

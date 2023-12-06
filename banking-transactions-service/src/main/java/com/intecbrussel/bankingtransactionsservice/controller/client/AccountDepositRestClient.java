@@ -46,6 +46,7 @@ public class AccountDepositRestClient {
                 depositRestTemplate.postForObject("/account-debit" + individualId, requestEntity, AccountDepositDTO.class);
 
         return ResponseEntity.ofNullable(accountDepositDTOResponseEntity);
-
     }
+
+
 }

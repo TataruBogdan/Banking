@@ -2,10 +2,10 @@ package com.intecbrussel.bankingdepositaccountsservice.deposit.controller;
 
 import com.intecbrussel.bankingdepositaccountsservice.deposit.controller.client.IndividualRestClient;
 import com.intecbrussel.bankingdepositaccountsservice.deposit.service.DepositAccountService;
-import com.intecbrussel.bankingdepositaccountsservice.deposit.service.impl.AccountDepositServiceImpl;
 import com.intecbrussel.commonsservice.dto.AccountDepositDTO;
 
 import com.intecbrussel.commonsservice.dto.ArgsDTO;
+import com.intecbrussel.commonsservice.dto.CreditAccountDepositDTO;
 import com.intecbrussel.commonsservice.dto.IndividualDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -81,6 +83,27 @@ public class AccountDepositController {
         individualAccountDeposit.setIndividualDTO(individualDTO);
 
         return ResponseEntity.ok(individualAccountDeposit);
+    }
+    @PatchMapping(path = "/account-deposit/debit/{iban}")
+    public ResponseEntity<AccountDepositDTO> debitAccountDeposit(@PathVariable("iban") String iban, @RequestBody CreditAccountDepositDTO amount) {
+
+        Optional<AccountDepositDTO> depositAccountDTOByIban = depositAccountService.getByIban(iban);
+
+        if (depositAccountDTOByIban.isPresent()){
+            AccountDepositDTO accountDepositDTO = depositAccountDTOByIban.get();
+            IndividualDTO individualDTO = individualRestClient.getIndividualById(depositAccountDTOByIban.get().getIndividualId());
+
+            accountDepositDTO.setIndividualDTO(individualDTO);
+            LocalDate maturityDate = depositAccountDTOByIban.get().getMaturityDate();
+
+            if(maturityDate != null && ! maturityDate.isBefore(LocalDate.now())) {
+                depositAccountService.debitBalanceDeposit(accountDepositDTO.getIban(), amount.getAmount());
+                return ResponseEntity.ok(accountDepositDTO);
+            } else {
+                return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).build();
+            }
+        }
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
     @DeleteMapping(value = "delete/account-deposit/{iban}")
