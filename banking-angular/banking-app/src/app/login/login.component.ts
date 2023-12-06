@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+import {AuthService} from "../services/auth/auth.service";
 
 @Component({
   selector: 'app-login',
@@ -12,8 +14,12 @@ export class LoginComponent implements OnInit{
     errorMessage: string = 'Invalid credentials';
     invalidLogin: boolean = false;
 
+    constructor(private router: Router,
+                private authenticationService: AuthService) {
+    }
 
-
+    ngOnInit() {
+    }
 
 
 }

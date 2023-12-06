@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="banking-transactions-service" />
+        <module name="banking-user-service" />
         <module name="banking-deposit-accounts-service" />
         <module name="banking-loans-service" />
         <module name="banking-scheduler" />
@@ -25,6 +26,7 @@
       <module name="banking-loans-service" options="-parameters" />
       <module name="banking-scheduler" options="-parameters" />
       <module name="banking-transactions-service" options="-parameters" />
+      <module name="banking-user-service" options="-parameters" />
       <module name="bankingapp" options="" />
       <module name="commons-lib" options="-parameters" />
     </option>
