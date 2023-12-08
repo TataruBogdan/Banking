@@ -328,24 +328,13 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/AuthUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/repository/AuthUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/AuthUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/impl/AuthUserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AuthUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/CustomAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf/storage_v2/_src_/database/bank_db.YfHo6w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf/storage_v2/_src_/database/bank_db.YfHo6w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
@@ -406,6 +395,8 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,7 +481,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3548951",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.updates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -648,7 +639,8 @@
       <workItem from="1701436684044" duration="14718000" />
       <workItem from="1701764942763" duration="6169000" />
       <workItem from="1701852014989" duration="661000" />
-      <workItem from="1701854558318" duration="5336000" />
+      <workItem from="1701854558318" duration="6832000" />
+      <workItem from="1701938745048" duration="9161000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
