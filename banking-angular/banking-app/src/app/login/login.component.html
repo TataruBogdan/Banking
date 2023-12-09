@@ -3,7 +3,7 @@
 
 <div class="container">
 
-    <div class="alert alert-warning">{{errorMessage}}</div>
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
 
     <div>
         User name:
@@ -20,4 +20,5 @@
             [(ngModel)]="password"
             autocomplete="off">
     </div>
+    <button (click)="handleAuthLogin()" class="btn btn-success">Login</button>
 </div>

@@ -13,9 +13,10 @@ import lombok.ToString;
 @Setter
 @ToString
 @NoArgsConstructor
-@Table(name = "user")
+@Table(name = "user_tb")
 @Entity
 public class AuthUser {
+
 
     @Id
     @Column(name = "email_address", unique = true, nullable = false)
@@ -29,5 +30,11 @@ public class AuthUser {
     @Column(name = "admin")
     private boolean admin;
 
-
+    public AuthUser(String email, String password, String firstName, String lastName, Boolean admin) {
+        this.emailAddress = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.admin = admin;
+    }
 }

@@ -4,7 +4,6 @@ import com.intecbrussel.bankinguserservice.user.model.LoginRequest;
 import com.intecbrussel.bankinguserservice.user.model.LoginResponse;
 import com.intecbrussel.bankinguserservice.user.model.RegisterRequest;
 import com.intecbrussel.bankinguserservice.user.service.AuthService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -17,7 +16,7 @@ import java.util.Optional;
 
 @RestController
 //@RequiredArgsConstructor
-@RequestMapping("/")
+//@RequestMapping("/")
 public class AuthController {
 
     private final AuthService authService;
@@ -49,7 +48,8 @@ public class AuthController {
                 registerRequest.getFirstName(),
                 registerRequest.getLastName(),
                 registerRequest.getEmail(),
-                registerRequest.getPassword()
+                registerRequest.getPassword(),
+                registerRequest.isAdmin()
         );
 
         if (success) {

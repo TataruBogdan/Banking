@@ -24,11 +24,11 @@ import java.util.Map;
 @Component
 public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
-    private final JWTUtil jwtUtil;
+    private final JwtUtil jwtUtil;
 
     private final ObjectMapper mapper;
 
-    public JWTAuthorizationFilter(JWTUtil jwtUtil, ObjectMapper mapper) {
+    public JWTAuthorizationFilter(JwtUtil jwtUtil, ObjectMapper mapper) {
         this.jwtUtil = jwtUtil;
         this.mapper = mapper;
     }
@@ -51,14 +51,17 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
             }
 
             Claims claims = jwtUtil.resolveClaims(request);
-            String email = claims.getSubject();
+            if (claims != null & jwtUtil.validateClaims(claims)) {
+                String email = claims.getSubject();
 
-            List<GrantedAuthority> list = new ArrayList<>();
-            String role = claims.get("role", String.class);
-            list.add(new CustomAuthority(role));
+                List<GrantedAuthority> list = new ArrayList<>();
+                String role = claims.get("role", String.class);
+                list.add(new CustomAuthority(role));
 
-            Authentication authentication = new UsernamePasswordAuthenticationToken(email, "", list);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+                Authentication authentication = new UsernamePasswordAuthenticationToken(email, "", list);
+
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
         } catch (Exception e) {
             errorDetails.put("message", "Authentication Error");
             errorDetails.put("details", e.getMessage());

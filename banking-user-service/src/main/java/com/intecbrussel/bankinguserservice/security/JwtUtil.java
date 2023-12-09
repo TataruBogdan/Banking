@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 @Component
-public class JWTUtil {
+public class JwtUtil {
 
     private final String secret_key = "mysecretkeymysecretkeymysecretkeymysecretkeymysecretkeymysecretkey";
 
@@ -23,7 +23,7 @@ public class JWTUtil {
     private final String TOKEN_HEADER = "Authorization";
     private final String TOKEN_PREFIX = "Bearer ";
 
-    public JWTUtil() {
+    public JwtUtil() {
         this.jwtParser = Jwts.parserBuilder().setSigningKey(Keys.hmacShaKeyFor(secret_key.getBytes(StandardCharsets.UTF_8))).build();
     }
 

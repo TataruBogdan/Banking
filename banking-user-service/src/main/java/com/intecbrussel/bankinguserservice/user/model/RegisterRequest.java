@@ -6,12 +6,14 @@ public class RegisterRequest {
     private String lastName;
     private String email;
     private String password;
+    private boolean admin;
 
-    public RegisterRequest(String firstName, String lastName, String email, String password) {
+    public RegisterRequest(String firstName, String lastName, String email, String password, boolean admin) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.admin = admin;
     }
 
     public String getFirstName() {
@@ -46,4 +48,11 @@ public class RegisterRequest {
         this.password = password;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
 }

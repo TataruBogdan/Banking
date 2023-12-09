@@ -46,8 +46,8 @@ export class AuthService {
 
         let promise = axios.post("http://localhost:8080/login", credentials);
         console.log("PROMISE" + promise);
-        return promise;
-
+        //return promise;
+        return promise
     }
 
 }

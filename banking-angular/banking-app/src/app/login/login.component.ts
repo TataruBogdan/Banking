@@ -21,5 +21,21 @@ export class LoginComponent implements OnInit{
     ngOnInit() {
     }
 
+    handleAuthLogin() {
+        this.authenticationService
+            .executeAuthenticationService(this.username, this.password)
+            .then((response) => {
+                const token = response.data.token;
+                localStorage.setItem('AUTHENTICATED_USER', this.username);
+                localStorage.setItem('TOKEN', token);
+                console.log("GET TOKEN RESPONSE" + token);
+                this.router.navigate(['welcome', this.username]);
+                this.invalidLogin = false;
+            }).catch((error) => {
+                console.log(error);
+                this.invalidLogin = true;
+        })
+    }
+
 
 }

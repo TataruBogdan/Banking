@@ -14,7 +14,7 @@ const routes: Routes = [
     {path: '', component: LogoutComponent},
     {path: 'login', component: LoginComponent},
     {path: 'logout', component: LogoutComponent},
-    {path: 'welcome', component: WelcomeComponent},
+    {path: 'welcome/:name', component: WelcomeComponent},
     {path: 'current-account', component: CurrentAccountComponent},
     {path: 'deposit-account', component: DepositAccountComponent},
     {path: 'loan-account', component: LoanAccountComponent},
