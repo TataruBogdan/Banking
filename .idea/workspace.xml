@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="With Security - TODO">
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/UserAppResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/UserLoginResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/http/interceptorUser/http-interceptor-user-auth.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/http/interceptorUser/http-interceptor-user-auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/sharedData/shared-data.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/sharedData/shared-data.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/CurrentAccountAppResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/IndividualAppResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/individualService/individual.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/individualService/individual.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/userService/user.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/userService/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/assets/const/app.const.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -24,10 +33,14 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24668" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24670" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24671" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24689" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24692" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24694" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24695" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24755" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24758" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24760" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24761" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24763" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24766" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24768" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/24769" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/112" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/113" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16428/1247" afterDir="false" />
@@ -334,22 +347,12 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/documentation/user_tb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf/storage_v2/_src_/database/bank_db.YfHo6w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf/storage_v2/_src_/database/bank_db.YfHo6w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/documentation/account_current.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/documentation/account_current.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247_fsm" afterDir="false" />
@@ -358,6 +361,7 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_fsm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1249_vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1259_vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16385" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16424" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16388" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16450" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16390" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16426" afterDir="false" />
@@ -369,6 +373,9 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2608_fsm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2610" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2619_vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2620" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2656" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2657" afterDir="false" />
@@ -384,11 +391,15 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2674" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2678" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2696" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2696" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2699" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2699" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2701" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2701" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2702" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2702" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2703" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2704" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2840" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2840" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2840_vm" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2840_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2841" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/2841" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3455" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3501" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3501" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3502" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/3502" afterDir="false" />
@@ -409,15 +420,6 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/BankingUserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/BankingUserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JWTAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JWTAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/security/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/model/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/AuthUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/service/impl/AuthUserImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +437,7 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/banking-clients-service" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -492,7 +494,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "21",
     "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-user-service",
     "node.js.detected.package.eslint": "true",
@@ -661,7 +663,7 @@
       <workItem from="1701764942763" duration="6169000" />
       <workItem from="1701852014989" duration="661000" />
       <workItem from="1701854558318" duration="6832000" />
-      <workItem from="1701938745048" duration="23663000" />
+      <workItem from="1701938745048" duration="28988000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />

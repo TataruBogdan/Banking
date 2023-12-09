@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UsersComponent } from './users/users.component';
 import {FormsModule} from "@angular/forms";
+import { IndividualComponent } from './individual/individual.component';
+import { IndividualsComponent } from './individuals/individuals.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {FormsModule} from "@angular/forms";
     ErrorComponent,
     LoginComponent,
     LogoutComponent,
-    UsersComponent
+    UsersComponent,
+    IndividualComponent,
+    IndividualsComponent
   ],
     imports: [
         BrowserModule,

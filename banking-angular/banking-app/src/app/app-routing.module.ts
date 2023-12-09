@@ -8,6 +8,8 @@ import {DepositAccountComponent} from "./deposit-account/deposit-account.compone
 import {LoanAccountComponent} from "./loan-account/loan-account.component";
 import {TransactionComponent} from "./transaction/transaction.component";
 import {ErrorComponent} from "./error/error.component";
+import {IndividualComponent} from "./individual/individual.component";
+import {IndividualsComponent} from "./individuals/individuals.component";
 
 const routes: Routes = [
 
@@ -15,6 +17,8 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'logout', component: LogoutComponent},
     {path: 'welcome/:name', component: WelcomeComponent},
+    {path: 'individual/update/:id', component: IndividualComponent},
+    {path: 'individuals', component: IndividualsComponent},
     {path: 'current-account', component: CurrentAccountComponent},
     {path: 'deposit-account', component: DepositAccountComponent},
     {path: 'loan-account', component: LoanAccountComponent},
