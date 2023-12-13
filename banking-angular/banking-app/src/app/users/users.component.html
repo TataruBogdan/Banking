@@ -3,7 +3,7 @@
 
 <div>
     Click here to get all users
-    <button class="btn btn-success">Get all users</button>
+    <button class="btn btn-success" (click)="refreshUser()">Get all users</button>
 </div>
 
 <div class="container d-flex justify-content-center">
@@ -18,8 +18,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-
+            <tr *ngFor="let user of users">
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.admin}}</td>
             </tr>
         </tbody>
     </table>

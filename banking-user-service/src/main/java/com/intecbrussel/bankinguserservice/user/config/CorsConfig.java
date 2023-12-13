@@ -1,5 +1,6 @@
 package com.intecbrussel.bankinguserservice.user.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -7,7 +8,6 @@ import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 public class CorsConfig {
-
 
     public CorsFilter corsConfig() {
 
@@ -20,7 +20,7 @@ public class CorsConfig {
         config.addAllowedOrigin("http://localhost:8300");
         config.addAllowedOrigin("http://localhost:8400");
         config.addAllowedOrigin("http://localhost:8500");
-
+        //config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 

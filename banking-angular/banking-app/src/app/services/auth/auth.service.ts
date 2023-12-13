@@ -20,7 +20,7 @@ export class AuthService {
 
     logout():void {
       localStorage.removeItem('AUTHENTICATED_USER');
-      localStorage.removeItem("TOKEN");
+      localStorage.removeItem('TOKEN');
     }
 
     getToken(): string | null {

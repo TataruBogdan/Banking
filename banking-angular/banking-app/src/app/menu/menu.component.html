@@ -9,6 +9,7 @@
                 <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/welcome" class="nav-link">Home</a></li>
                 <li><a class="nav-link">Accounts</a></li>
                 <li><a href="" class="nav-link">Transactions</a></li>
+                <li *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/users" class="nav-link">Users</li>
             </ul>
 
         </div>

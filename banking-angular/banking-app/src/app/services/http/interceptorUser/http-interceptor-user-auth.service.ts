@@ -16,7 +16,7 @@ export class HttpInterceptorUserAuthService implements HttpInterceptor{
         if (authToken){
             const authRequest = req.clone( {
                 setHeaders: {
-                    'Access-Control-Allow-Origin': 'http://localhost:4200/',
+                    'Access-Control-Allow-Origin': 'http://localhost:4200',
                     'Authorization': `Bearer ${authToken}`,
                     'Access-Control-Allow-Methods':'GET, PUT, POST, DELETE, PATCH, OPTIONS',
                     'Content-Type': 'application/json'

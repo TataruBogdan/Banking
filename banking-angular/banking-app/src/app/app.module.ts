@@ -18,6 +18,7 @@ import { UsersComponent } from './users/users.component';
 import {FormsModule} from "@angular/forms";
 import { IndividualComponent } from './individual/individual.component';
 import { IndividualsComponent } from './individuals/individuals.component';
+import {HttpInterceptorUserAuthService} from "./services/http/interceptorUser/http-interceptor-user-auth.service";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,9 @@ import { IndividualsComponent } from './individuals/individuals.component';
         FormsModule,
         HttpClientModule
     ],
-  providers: [],
+  providers: [{
+      provide:HTTP_INTERCEPTORS, useClass: HttpInterceptorUserAuthService, multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

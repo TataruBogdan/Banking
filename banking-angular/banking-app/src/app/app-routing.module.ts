@@ -10,6 +10,7 @@ import {TransactionComponent} from "./transaction/transaction.component";
 import {ErrorComponent} from "./error/error.component";
 import {IndividualComponent} from "./individual/individual.component";
 import {IndividualsComponent} from "./individuals/individuals.component";
+import {UsersComponent} from "./users/users.component";
 
 const routes: Routes = [
 
@@ -23,6 +24,7 @@ const routes: Routes = [
     {path: 'deposit-account', component: DepositAccountComponent},
     {path: 'loan-account', component: LoanAccountComponent},
     {path: 'transaction', component: TransactionComponent},
+    {path: 'users', component: UsersComponent},
     {path: '**', component: ErrorComponent}
 ];
 
