@@ -1,3 +1,4 @@
+import {IndividualAppResponse} from "./IndividualAppResponse";
 
 
 export interface CurrentAccountAppResponse {
@@ -8,5 +9,6 @@ export interface CurrentAccountAppResponse {
     startDate: Date,
     //currentStatus is Enum -> string ?
     currentStatus: string,
-    primaryAccount: boolean
+    primaryAccount: boolean,
+    individual: IndividualAppResponse
 }

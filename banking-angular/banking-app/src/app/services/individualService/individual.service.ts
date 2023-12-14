@@ -29,7 +29,18 @@ export class IndividualService {
     public getAllIndividuals(): Observable<IndividualAppResponse> {
 
         const url: string = `${CLIENT_API_URL}/individuals`;
-        return this.http.get<IndividualAppResponse>(url);
+        const authToken = localStorage.getItem('TOKEN');
+
+        const headers = new HttpHeaders({
+            'Access-Control-Allow-Origin': 'http://localhost:4200',
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${authToken}`,
+            'Access-Control-Allow-Methods':'GET, PUT, POST, DELETE, PATCH, OPTIONS'
+        });
+
+        const options = { headers: headers };
+
+        return this.http.get<IndividualAppResponse>(url, options);
     }
 
 

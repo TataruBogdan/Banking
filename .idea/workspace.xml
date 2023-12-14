@@ -332,18 +332,31 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/db_16384.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/27dea70f-7efc-4089-a9a0-7c6894918baf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individual/individual.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/individuals/individuals.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/CurrentAccountAppResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/CurrentAccountAppResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/UserAppResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/UserAppResponse.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/current/current-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/current/current-account.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/http/interceptorUser/http-interceptor-user-auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/http/interceptorUser/http-interceptor-user-auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/individualService/individual.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/individualService/individual.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/sharedData/shared-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/sharedData/shared-data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/userService/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/userService/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/users/users.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/welcome/welcome.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/controller/IndividualController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/controller/IndividualController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/AccountCurrentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/controller/AccountCurrentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/13481/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/1247" afterDir="false" />
@@ -412,7 +425,8 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -472,52 +486,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Maven.banking-clients-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BankingClientsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BankingCurrentAccountsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BankingUserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bogdan/IdeaProjects/bankingapp/banking-user-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3548951&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path": "/home/bogdan/IdeaProjects/bankingapp/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Maven.banking-clients-service [clean,install].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BankingClientsServiceApplication.executor": "Run",
+    "Spring Boot.BankingCurrentAccountsServiceApplication.executor": "Run",
+    "Spring Boot.BankingUserServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-user-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3548951",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/banking-current-accounts-service/src/main/java/com/intecbrussel/bankingcurrentaccountsservice/account/dto" />
       <recent name="$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intecbrussel.bankingclientsservice.clients.config" />
       <recent name="com.intecbrussel.bankingdepositaccountsservice.deposit.dto.types" />
       <recent name="com.intecbrussel.bankingcurrentaccountsservice.account.dto" />
     </key>
@@ -531,7 +546,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingClientsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -676,7 +691,8 @@
       <workItem from="1702284620119" duration="114000" />
       <workItem from="1702284795703" duration="1992000" />
       <workItem from="1702367843867" duration="14315000" />
-      <workItem from="1702453649467" duration="609000" />
+      <workItem from="1702453649467" duration="11446000" />
+      <workItem from="1702542822677" duration="8939000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -812,7 +828,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-clients-service/src/main/java/com/intecbrussel/bankingclientsservice/clients/controller/IndividualController.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -822,17 +838,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
-          <line>126</line>
+          <line>127</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -842,7 +858,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>51</line>
+          <line>52</line>
           <properties class="com.intecbrussel.bankingdepositaccountsservice.deposit.controller.AccountDepositController" method="retrieveAccountDeposit">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -851,7 +867,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
-          <line>47</line>
+          <line>48</line>
           <properties class="com.intecbrussel.bankingtransactionsservice.controller.TransactionController" method="createTransaction">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -869,7 +885,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-user-service/src/main/java/com/intecbrussel/bankinguserservice/user/controller/AuthController.java</url>
-          <line>45</line>
+          <line>44</line>
           <properties class="com.intecbrussel.bankinguserservice.user.controller.AuthController" method="register">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

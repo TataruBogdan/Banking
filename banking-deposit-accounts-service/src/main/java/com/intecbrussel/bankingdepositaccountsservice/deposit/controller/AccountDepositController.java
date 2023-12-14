@@ -23,6 +23,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class AccountDepositController {
 
     @Autowired

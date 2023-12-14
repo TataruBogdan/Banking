@@ -28,7 +28,9 @@ public class AccountCurrentController {
     @Autowired
     private IndividualRestClient individualRestClient;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/accounts-current")
+
     public ResponseEntity<List<AccountCurrentDTO>> retrieveAllAccounts() {
 
         List<AccountCurrentDTO> allAccountsCurrentDTO = accountCurrentService.getAll();

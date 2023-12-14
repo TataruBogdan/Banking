@@ -19,7 +19,8 @@ import java.util.Optional;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
-@Controller
+@RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class AccountLoanController {
 
     @Autowired

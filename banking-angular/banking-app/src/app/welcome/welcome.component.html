@@ -2,7 +2,7 @@
 
 <div class="container">
 
-Welcome {{name}} to Banking App (we can take all your money !) <br> <br>
+Welcome {{userName}} to Banking App (we can take all your money !) <br> <br>
 
 You can make all your payments from this app without any worry that you will ever find them
 
@@ -14,7 +14,7 @@ You can make all your payments from this app without any worry that you will eve
 
     <div class="my-2">
         Click here to get all your current accounts
-        <button class="btn btn-success">Current accounts</button>
+        <button class="btn btn-success" (click)="triggerGetAccounts()">Current accounts</button>
     </div>
 
     <div class="my-2">

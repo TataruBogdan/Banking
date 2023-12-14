@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import {BehaviorSubject} from "rxjs";
+import {BehaviorSubject, Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedDataService {
 
-    private userNameSubject = new BehaviorSubject<string>('');
-    userNam$ = this.userNameSubject.asObservable();
+    private triggerGetAccounts = new Subject<void>();
+    triggerGetAccounts$ = this.triggerGetAccounts.asObservable();
 
     constructor() { }
 
-    setUserName(name: string) {
-        this.userNameSubject.next(name);
+    triggerGetAccountsMethod() {
+        this.triggerGetAccounts.next();
     }
 }

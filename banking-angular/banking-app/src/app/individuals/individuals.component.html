@@ -1,9 +1,41 @@
 
-<h1>Clients :</h1>
+<h1>Clients: </h1>
+<div class="container">
+    <div class="btn btn-success" (click)="refreshIndividuals()">Get all clients</div>
+</div>
 
-<div>
-    Click here to get all clients
-    <button class="btn btn-success">Get all users</button>
+
+<div class="container d-flex justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let individual of individuals">
+                <td>{{individual.id}}</td>
+                <td>{{individual.firstName}}</td>
+                <td>{{individual.lastName}}</td>
+                <td>{{individual.address}}</td>
+                <td>{{individual.birthDate}}</td>
+                <td>{{individual.phoneNumber}}</td>
+                <td>{{individual.emailAddress}}</td>
+                <td>{{individual.rrn}}</td>
+                <td>{{individual.employerName}}</td>
+                <td>{{individual.occupation}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 

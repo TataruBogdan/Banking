@@ -1,16 +1,17 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {SharedDataService} from "../services/sharedData/shared-data.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {CurrentAccountComponent} from "../current-account/current-account.component";
+import {CurrentAccountService} from "../services/current/current-account.service";
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+    selector: 'app-welcome',
+    styleUrls: ['./welcome.component.css'],
+    templateUrl: 'welcome.component.html'
 })
 export class WelcomeComponent implements OnInit{
 
-    name: string = '';
-
+    userName: string = '';
 
     constructor(
        private activatedRoute: ActivatedRoute,
@@ -20,8 +21,12 @@ export class WelcomeComponent implements OnInit{
 
 
     ngOnInit() {
-        this.name = this.activatedRoute.snapshot.params['name'];
-        this.sharedDataService.setUserName(this.name);
+        this.userName = this.activatedRoute.snapshot.params['userName'];
+        //this.sharedDataService.setUserName(this.name);
+    }
+
+    triggerGetAccounts() {
+        this.sharedDataService.triggerGetAccountsMethod();
     }
 
 }

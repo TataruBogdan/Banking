@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {UserLoginResponse} from "../../../interfaces/UserLoginResponse";
+import {IndividualAppResponse} from "../../../interfaces/IndividualAppResponse";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import {UserLoginResponse} from "../../../interfaces/UserLoginResponse";
 export class HttpInterceptorUserAuthService implements HttpInterceptor{
     constructor() { }
 
-    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<UserLoginResponse>> {
+    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<IndividualAppResponse>> {
 
         const authToken = localStorage.getItem('TOKEN');
         console.log(authToken);

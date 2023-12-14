@@ -1,5 +1,6 @@
 package com.intecbrussel.bankinguserservice.user.controller;
 
+import com.intecbrussel.bankinguserservice.user.model.AuthUser;
 import com.intecbrussel.bankinguserservice.user.model.LoginRequest;
 import com.intecbrussel.bankinguserservice.user.model.LoginResponse;
 import com.intecbrussel.bankinguserservice.user.model.RegisterRequest;
@@ -7,11 +8,9 @@ import com.intecbrussel.bankinguserservice.user.service.AuthService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -57,6 +56,12 @@ public class AuthController {
         }
 
         return ResponseEntity.badRequest().build();
+    }
+
+    @GetMapping("/users")
+    public List<AuthUser> retrieveAllUsers(){
+        Optional<List<AuthUser>> allUsers = authService.findAllUsers();
+        return allUsers.orElse(null);
     }
 
 

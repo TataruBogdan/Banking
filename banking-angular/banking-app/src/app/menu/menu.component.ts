@@ -11,7 +11,7 @@ import {SharedDataService} from "../services/sharedData/shared-data.service";
 })
 export class MenuComponent implements OnInit{
 
-    userName: string = '';
+    userName: string | null = '';
     isUserLoggedIn: boolean = false;
 
 
@@ -22,6 +22,7 @@ export class MenuComponent implements OnInit{
 
     ngOnInit(): void {
         this.isUserLoggedIn = this.authenticationsService.isUserLoggedIn();
+        this.userName = this.authenticationsService.getUser();
         // this.sharedDataService.userNam$.subscribe((name) => {
         //     this.userName = name;
         // });

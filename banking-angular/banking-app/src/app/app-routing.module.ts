@@ -17,7 +17,7 @@ const routes: Routes = [
     {path: '', component: LogoutComponent},
     {path: 'login', component: LoginComponent},
     {path: 'logout', component: LogoutComponent},
-    {path: 'welcome/:name', component: WelcomeComponent},
+    {path: 'welcome/:userName', component: WelcomeComponent},
     {path: 'individual/update/:id', component: IndividualComponent},
     {path: 'individuals', component: IndividualsComponent},
     {path: 'current-account', component: CurrentAccountComponent},

@@ -6,17 +6,20 @@
         <div class="navbar-brand">
 
             <ul class="navbar-nav">
-                <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/welcome" class="nav-link">Home</a></li>
-                <li><a class="nav-link">Accounts</a></li>
-                <li><a href="" class="nav-link">Transactions</a></li>
+                <li><a *ngIf="authenticationsService.isUserLoggedIn()" [routerLink]="['/welcome', userName]" class="nav-link">Home</a></li>
+                <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/current-account" class="nav-link">Current accounts</a></li>
+                <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/deposit-account" class="nav-link">Deposit accounts</a></li>
+                <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/loan-account" class="nav-link">Loan Accounts</a></li>
+                <li><a *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/transaction" class="nav-link">Transactions</a></li>
                 <li *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/users" class="nav-link">Users</li>
+                <li *ngIf="authenticationsService.isUserLoggedIn()" routerLink="/individuals" class="nav-link">Clients</li>
             </ul>
 
         </div>
 
 
             <ul class="navbar-nav navbar-collapse justify-content-end">
-                <li><a routerLink="/login" href="" class="nav-link">Login</a></li>
+                <li><a routerLink="/login" class="nav-link">Login</a></li>
                 <li><a *ngIf="authenticationsService.isUserLoggedIn()" (click)="authenticationsService.logout()" routerLink="/logout" href="" class="nav-link">Logout</a></li>
             </ul>
 

@@ -1,1 +1,51 @@
-<p>current-account works!</p>
+
+<h1>Current accounts:</h1>
+
+<div class="container d-flex justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IBAN</th>
+                <th>Balance</th>
+                <th>Client id</th>
+                <th>Start date</th>
+                <th>Current status</th>
+                <th>Primary account</th>
+            </tr>
+            <tr>
+                <th>Client id</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let currentAccount of currentAccountsResponse">
+            <tr>
+                <td>{{currentAccount.iban}}</td>
+                <td>{{currentAccount.balance}}</td>
+                <td>{{currentAccount.individualId}}</td>
+                <td>{{currentAccount.startDate}}</td>
+                <td>{{currentAccount.currentStatus}}</td>
+                <td>{{currentAccount.primaryAccount}}</td>
+            </tr>
+            <tr>
+                <td>{{currentAccount.individual.id}}</td>
+                <td>{{currentAccount.individual.firstName}}</td>
+                <td>{{currentAccount.individual.lastName}}</td>
+                <td>{{currentAccount.individual.address}}</td>
+                <td>{{currentAccount.individual.phoneNumber}}</td>
+                <td>{{currentAccount.individual.birthDate}}</td>
+                <td>{{currentAccount.individual.emailAddress}}</td>
+                <td>{{currentAccount.individual.rrn}}</td>
+                <td>{{currentAccount.individual.employerName}}</td>
+                <td>{{currentAccount.individual.occupation}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

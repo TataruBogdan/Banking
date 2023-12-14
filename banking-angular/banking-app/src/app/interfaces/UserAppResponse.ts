@@ -2,7 +2,7 @@
 
 export interface UserAppResponse{
 
-    email: string,
+    emailAddress: string,
     password: string,
     firstName: string,
     lastName: string,

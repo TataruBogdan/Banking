@@ -12,7 +12,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class IndividualComponent implements OnInit{
 
-    message: boolean = false;
+
     id: number = 0;
 
     constructor(
@@ -41,7 +41,10 @@ export class IndividualComponent implements OnInit{
                 data => this.individual = data
             )
         }
+
     }
+
+
 
 
 

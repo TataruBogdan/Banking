@@ -26,6 +26,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/transactions")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TransactionController {
 
     @Autowired
