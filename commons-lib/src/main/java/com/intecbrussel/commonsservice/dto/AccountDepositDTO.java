@@ -23,6 +23,4 @@ public class AccountDepositDTO {
     private LocalDateTime startDate;
     private DepositStatus status;
     private IndividualDTO individualDTO;
-
-
 }

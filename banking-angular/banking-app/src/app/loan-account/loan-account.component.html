@@ -1,1 +1,52 @@
-<p>loan-account works!</p>
+
+
+<h1>Loan accounts:</h1>
+
+<div class="container d-flex justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Loan IBAN</th>
+                <th>Amount</th>
+                <th>Client id</th>
+                <th>Period</th>
+                <th>Interest Rate</th>
+                <th>Start Date</th>
+                <th>Loan status</th>
+                <th>Principal</th>
+                <th>Client Id</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let loanAccount of loanAccountResponse">
+                <td>{{loanAccount.iban}}</td>
+                <td>{{loanAccount.loanAmount}}</td>
+                <td>{{loanAccount.individualId}}</td>
+                <td>{{loanAccount.period}}</td>
+                <td>{{loanAccount.interestRate}}</td>
+                <td>{{loanAccount.startDate}}</td>
+                <td>{{loanAccount.loanStatus}}</td>
+                <td>{{loanAccount.principal}}</td>
+                <td>{{loanAccount.individual.id}}</td>
+                <td>{{loanAccount.individual.firstName}}</td>
+                <td>{{loanAccount.individual.lastName}}</td>
+                <td>{{loanAccount.individual.address}}</td>
+                <td>{{loanAccount.individual.birthDate}}</td>
+                <td>{{loanAccount.individual.phoneNumber}}</td>
+                <td>{{loanAccount.individual.emailAddress}}</td>
+                <td>{{loanAccount.individual.rrn}}</td>
+                <td>{{loanAccount.individual.employerName}}</td>
+                <td>{{loanAccount.individual.occupation}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

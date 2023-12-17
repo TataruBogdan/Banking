@@ -20,7 +20,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+
 public class AccountLoanController {
 
     @Autowired
@@ -29,6 +29,7 @@ public class AccountLoanController {
     @Autowired
     private IndividualRestClient individualRestClient;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/accounts-loan")
     public ResponseEntity<List<AccountLoanDTO>> retrieveAllAccountsLoan(){
         List<AccountLoanDTO> accountLoanDTOList = accountLoanService.getAll();

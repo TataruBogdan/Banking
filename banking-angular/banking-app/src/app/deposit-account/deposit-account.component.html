@@ -1,1 +1,61 @@
-<p>deposit-account works!</p>
+
+
+<h1>Deposit accounts:</h1>
+
+<div class="container d-flex justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IBAN</th>
+                <th>Deposit Amount</th>
+                <th>Balance</th>
+                <th>Client Id</th>
+                <th>Interest Rate</th>
+                <th>Maturity Rate</th>
+                <th>Maturity Date</th>
+                <th>Maturity Months</th>
+                <th>Self capitalization</th>
+                <th>Maturity IBAN</th>
+                <th>Start Date</th>
+                <th>Status</th>
+                <th>Client id</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let depositAccount of depositAccountResponse">
+                <td>{{depositAccount.iban}}</td>
+                <td>{{depositAccount.depositAmount}}</td>
+                <td>{{depositAccount.balance}}</td>
+                <td>{{depositAccount.individualId}}</td>
+                <td>{{depositAccount.interestRate}}</td>
+                <td>{{depositAccount.maturityRate}}</td>
+                <td>{{depositAccount.maturityDate}}</td>
+                <td>{{depositAccount.maturityMonths}}</td>
+                <td>{{depositAccount.selfCapitalization}}</td>
+                <td>{{depositAccount.maturityIban}}</td>
+                <td>{{depositAccount.startDate}}</td>
+                <td>{{depositAccount.status}}</td>
+                <td>{{depositAccount.individual.id}}</td>
+                <td>{{depositAccount.individual.firstName}}</td>
+                <td>{{depositAccount.individual.lastName}}</td>
+                <td>{{depositAccount.individual.address}}</td>
+                <td>{{depositAccount.individual.birthDate}}</td>
+                <td>{{depositAccount.individual.phoneNumber}}</td>
+                <td>{{depositAccount.individual.emailAddress }}</td>
+                <td>{{depositAccount.individual.rrn}}</td>
+                <td>{{depositAccount.individual.employerName}}</td>
+                <td>{{depositAccount.individual.occupation}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
