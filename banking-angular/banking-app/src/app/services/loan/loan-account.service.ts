@@ -15,7 +15,7 @@ export class LoanAccountService {
     public getAllLoanAccounts(): Observable<LoanAccountAppResponse> {
 
         const url: string = `http://localhost:8400/accounts-loan`;
-        const authToken = localStorage.getItem('TOKEN');
+        const authToken: string | null = localStorage.getItem('TOKEN');
 
         const headers: HttpHeaders = new HttpHeaders({
             'Access-Control-Allow-Origin': 'http://localhost:4200',

@@ -1,1 +1,51 @@
-<p>transaction works!</p>
+
+<h1>Transaction:</h1>
+
+<div class="container">
+    Get all transactions with status
+    <label for="statusInput">Enter Status:</label>
+    <input id="statusInput" type="text" [(ngModel)]="statusList">
+
+    <button (click)="filterTransactions()">Filter Transactions</button>
+
+</div>
+
+<div class="container d-flex, justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Transaction Id</th>
+                <th>From Client Id</th>
+                <th>From IBAN</th>
+                <th>From Account Type</th>
+                <th>Transaction amount</th>
+                <th>Transaction Date</th>
+                <th>Transaction Status</th>
+            </tr>
+            <tr>
+                <th>From Client id</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <th>To Client Id</th>
+                <th>To IBAN</th>
+                <th>To Account Type</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let transaction of transactionsResponse">
+            <tr>
+                <td>{{transaction.transactionId}}</td>
+                <td>{{transaction.fromIndividualId}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

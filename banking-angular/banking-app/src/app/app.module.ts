@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {DatePipe} from "@angular/common";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,7 +46,7 @@ import {HttpInterceptorUserAuthService} from "./services/http/interceptorUser/ht
     ],
   providers: [{
       provide:HTTP_INTERCEPTORS, useClass: HttpInterceptorUserAuthService, multi:true
-  }],
+  }, [DatePipe]],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

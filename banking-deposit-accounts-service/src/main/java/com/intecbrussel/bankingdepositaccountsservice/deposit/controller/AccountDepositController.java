@@ -23,7 +23,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RequiredArgsConstructor
 @RestController
-
+@CrossOrigin(origins = "http://localhost:4200")
 public class AccountDepositController {
 
     @Autowired
@@ -32,7 +32,6 @@ public class AccountDepositController {
     @Autowired
     private IndividualRestClient individualRestClient;
 
-    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/accounts-deposit")
     public ResponseEntity<List<AccountDepositDTO>> retrieveAllAccountsDeposit() {
 

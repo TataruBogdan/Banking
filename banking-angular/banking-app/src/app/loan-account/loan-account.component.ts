@@ -21,13 +21,14 @@ export class LoanAccountComponent implements OnInit{
     }
 
     ngOnInit(): void {
+        this.getAllDepositAccounts();
     }
 
     getAllDepositAccounts() {
         this.loanAccountService.getAllLoanAccounts().subscribe({
             next:(response: any) => {
                 console.log(response)
-                this.loanAccountResponse = response || []
+                this.loanAccountResponse = response
                 this.message ='Deposit accounts found'
             },
             error:(err: 'Error on getting deposit accounts') => console.log(err)

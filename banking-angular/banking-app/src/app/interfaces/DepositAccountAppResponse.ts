@@ -15,5 +15,7 @@ export interface DepositAccountAppResponse {
     maturityIban: string,
     startDate: Date,
     status: string // this is enum -> ok to string ? Object !!!
-    individual: IndividualAppResponse
+    individualDTO: IndividualAppResponse
 }
+
+

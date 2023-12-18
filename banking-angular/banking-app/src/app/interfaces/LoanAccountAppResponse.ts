@@ -1,5 +1,5 @@
 import {IndividualAppResponse} from "./IndividualAppResponse";
-import {LoanStatusResponse} from "./LoanStatusResponse";
+
 
 
 export interface LoanAccountAppResponse {
@@ -12,5 +12,5 @@ export interface LoanAccountAppResponse {
     startDate: Date,
     loanStatus: string,
     principal: number,
-    individual: IndividualAppResponse
+    individualDTO: IndividualAppResponse
 }

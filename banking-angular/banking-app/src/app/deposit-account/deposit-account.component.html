@@ -18,6 +18,8 @@
                 <th>Maturity IBAN</th>
                 <th>Start Date</th>
                 <th>Status</th>
+            </tr>
+            <tr>
                 <th>Client id</th>
                 <th>First name</th>
                 <th>Last name</th>
@@ -30,8 +32,8 @@
                 <th>Occupation</th>
             </tr>
         </thead>
-        <tbody >
-            <tr *ngFor="let depositAccount of depositAccountResponse">
+        <tbody *ngFor="let depositAccount of depositAccountResponse">
+            <tr>
                 <td>{{depositAccount.iban}}</td>
                 <td>{{depositAccount.depositAmount}}</td>
                 <td>{{depositAccount.balance}}</td>
@@ -42,18 +44,20 @@
                 <td>{{depositAccount.maturityMonths}}</td>
                 <td>{{depositAccount.selfCapitalization}}</td>
                 <td>{{depositAccount.maturityIban}}</td>
-                <td>{{depositAccount.startDate}}</td>
+                <td>{{depositAccount.startDate | date: 'dd:MM:yyyy'}}</td>
                 <td>{{depositAccount.status}}</td>
-                <td>{{depositAccount.individual.id}}</td>
-                <td>{{depositAccount.individual.firstName}}</td>
-                <td>{{depositAccount.individual.lastName}}</td>
-                <td>{{depositAccount.individual.address}}</td>
-                <td>{{depositAccount.individual.birthDate}}</td>
-                <td>{{depositAccount.individual.phoneNumber}}</td>
-                <td>{{depositAccount.individual.emailAddress }}</td>
-                <td>{{depositAccount.individual.rrn}}</td>
-                <td>{{depositAccount.individual.employerName}}</td>
-                <td>{{depositAccount.individual.occupation}}</td>
+            </tr>
+            <tr>
+                <td>{{depositAccount.individualDTO.id}}</td>
+                <td>{{depositAccount.individualDTO.firstName}}</td>
+                <td>{{depositAccount.individualDTO.lastName}}</td>
+                <td>{{depositAccount.individualDTO.address}}</td>
+                <td>{{depositAccount.individualDTO.birthDate | date: 'dd:MM:yyyy'}}</td>
+                <td>{{depositAccount.individualDTO.phoneNumber}}</td>
+                <td>{{depositAccount.individualDTO.emailAddress}}</td>
+                <td>{{depositAccount.individualDTO.rrn}}</td>
+                <td>{{depositAccount.individualDTO.employerName}}</td>
+                <td>{{depositAccount.individualDTO.occupation}}</td>
             </tr>
         </tbody>
     </table>

@@ -30,7 +30,7 @@
                 <td>{{currentAccount.iban}}</td>
                 <td>{{currentAccount.balance}}</td>
                 <td>{{currentAccount.individualId}}</td>
-                <td>{{currentAccount.startDate}}</td>
+                <td>{{currentAccount.startDate | date: 'dd:MM:yyyy'}}</td>
                 <td>{{currentAccount.currentStatus}}</td>
                 <td>{{currentAccount.primaryAccount}}</td>
             </tr>
@@ -40,7 +40,7 @@
                 <td>{{currentAccount.individual.lastName}}</td>
                 <td>{{currentAccount.individual.address}}</td>
                 <td>{{currentAccount.individual.phoneNumber}}</td>
-                <td>{{currentAccount.individual.birthDate}}</td>
+                <td>{{currentAccount.individual.birthDate | date: 'dd:MM:yyyy'}}</td>
                 <td>{{currentAccount.individual.emailAddress}}</td>
                 <td>{{currentAccount.individual.rrn}}</td>
                 <td>{{currentAccount.individual.employerName}}</td>

@@ -4,6 +4,7 @@ import {ActivatedRoute} from "@angular/router";
 import {DepositAccountService} from "../services/deposit/deposit-account.service";
 import {SharedDataService} from "../services/sharedData/shared-data.service";
 
+
 @Component({
   selector: 'app-deposit-account',
   templateUrl: './deposit-account.component.html',
@@ -42,6 +43,11 @@ export class DepositAccountComponent implements OnInit, OnDestroy{
 
     refreshDeposit() {
         this.getAllAccountsDeposit();
+    }
+
+    getDate() {
+        this.depositAccountResponse.entries();
+
     }
 
 }

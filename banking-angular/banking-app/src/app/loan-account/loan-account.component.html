@@ -14,6 +14,8 @@
                 <th>Start Date</th>
                 <th>Loan status</th>
                 <th>Principal</th>
+            </tr>
+            <tr>
                 <th>Client Id</th>
                 <th>First name</th>
                 <th>Last name</th>
@@ -26,26 +28,28 @@
                 <th>Occupation</th>
             </tr>
         </thead>
-        <tbody>
-            <tr *ngFor="let loanAccount of loanAccountResponse">
+        <tbody *ngFor="let loanAccount of loanAccountResponse">
+            <tr>
                 <td>{{loanAccount.iban}}</td>
                 <td>{{loanAccount.loanAmount}}</td>
                 <td>{{loanAccount.individualId}}</td>
                 <td>{{loanAccount.period}}</td>
                 <td>{{loanAccount.interestRate}}</td>
-                <td>{{loanAccount.startDate}}</td>
+                <td>{{loanAccount.startDate | date: 'dd:MM:yyyy'}}</td>
                 <td>{{loanAccount.loanStatus}}</td>
                 <td>{{loanAccount.principal}}</td>
-                <td>{{loanAccount.individual.id}}</td>
-                <td>{{loanAccount.individual.firstName}}</td>
-                <td>{{loanAccount.individual.lastName}}</td>
-                <td>{{loanAccount.individual.address}}</td>
-                <td>{{loanAccount.individual.birthDate}}</td>
-                <td>{{loanAccount.individual.phoneNumber}}</td>
-                <td>{{loanAccount.individual.emailAddress}}</td>
-                <td>{{loanAccount.individual.rrn}}</td>
-                <td>{{loanAccount.individual.employerName}}</td>
-                <td>{{loanAccount.individual.occupation}}</td>
+            </tr>
+            <tr>
+                <td>{{loanAccount.individualDTO.id}}</td>
+                <td>{{loanAccount.individualDTO.firstName}}</td>
+                <td>{{loanAccount.individualDTO.lastName}}</td>
+                <td>{{loanAccount.individualDTO.address}}</td>
+                <td>{{loanAccount.individualDTO.birthDate | date: 'dd:MM:yyyy'}}</td>
+                <td>{{loanAccount.individualDTO.phoneNumber}}</td>
+                <td>{{loanAccount.individualDTO.emailAddress}}</td>
+                <td>{{loanAccount.individualDTO.rrn}}</td>
+                <td>{{loanAccount.individualDTO.employerName}}</td>
+                <td>{{loanAccount.individualDTO.occupation}}</td>
             </tr>
         </tbody>
     </table>

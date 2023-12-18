@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="With Security - TODO">
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/DepositAccountAppResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/LoanAccountAppResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/LoanStatusResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/TransactionAppResponse.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -336,13 +334,18 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/deposit-account/deposit-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/deposit-account/deposit-account.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/deposit-account/deposit-account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/deposit-account/deposit-account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/DepositAccountAppResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/DepositAccountAppResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/LoanAccountAppResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/LoanAccountAppResponse.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/loan-account/loan-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/loan-account/loan-account.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/loan-account/loan-account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/loan-account/loan-account.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/deposit/deposit-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/deposit/deposit-account.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/loan/loan-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/loan/loan-account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/transaction/transaction.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/transaction/transaction.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master" afterDir="false" />
@@ -413,8 +416,6 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountDepositDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/AccountDepositDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/LoanStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/LoanStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,6 +494,7 @@
     "Spring Boot.BankingCurrentAccountsServiceApplication.executor": "Run",
     "Spring Boot.BankingDepositAccountsServiceApplication.executor": "Run",
     "Spring Boot.BankingLoansServiceApplication.executor": "Run",
+    "Spring Boot.BankingTransactionsServiceApplication.executor": "Run",
     "Spring Boot.BankingUserServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
@@ -536,7 +538,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingLoansServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingTransactionsServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -684,6 +686,7 @@
       <workItem from="1702453649467" duration="11446000" />
       <workItem from="1702542822677" duration="9116000" />
       <workItem from="1702627891389" duration="14385000" />
+      <workItem from="1702885991446" duration="9876000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -823,19 +826,9 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-loans-service/src/main/java/com/intecbrussel/bankingloansservice/loan/controller/AccountLoanController.java</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/service/impl/TransactionServiceImpl.java</url>
@@ -844,7 +837,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
-          <line>53</line>
+          <line>52</line>
           <properties class="com.intecbrussel.bankingdepositaccountsservice.deposit.controller.AccountDepositController" method="retrieveAccountDeposit">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
