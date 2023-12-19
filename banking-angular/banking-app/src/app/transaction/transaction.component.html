@@ -1,13 +1,55 @@
 
 <h1>Transaction:</h1>
 
+
+
+<form [formGroup]="transactionForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="fromIban">From IBAN:</label>
+        <input type="text" id="fromIban" formControlName="fromIban" required>
+    </div>
+
+    <div>
+        <label for="toIban">To IBAN:</label>
+        <input type="text" id="toIban" formControlName="toIban" required>
+    </div>
+
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" formControlName="amount" required>
+    </div>
+
+    <button class="btn btn-success" type="submit" [disabled]="transactionForm.invalid">Submit</button>
+</form>
+
 <div class="container">
-    Get all transactions with status
+    <p>Get all transactions with status</p>
     <label for="statusInput">Enter Status:</label>
     <input id="statusInput" type="text" [(ngModel)]="statusList">
 
-    <button (click)="filterTransactions()">Filter Transactions</button>
+    <button class="btn btn-success" (click)="filterTransactions()">Filter Transactions</button>
+</div>
 
+<div class="container">
+    <p>Execute a transaction</p>
+    <label for="transactionInput">Enter Transaction id:</label>
+    <input id="transactionInput" type="text" [(ngModel)]="transactionId">
+    <button class="btn btn-success" (click)="getExecuteTransaction()">Execute Transaction</button>
+</div>
+
+<div class="container d-flex, justify-content-center">
+    <table class="table">
+        <thead >
+            <tr>
+                <th>Transaction id</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let transactionId of ids">
+            <tr>
+                <td>{{transactionId.toString()}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <div class="container d-flex, justify-content-center">
@@ -15,15 +57,13 @@
         <thead>
             <tr>
                 <th>Transaction Id</th>
-                <th>From Client Id</th>
-                <th>From IBAN</th>
-                <th>From Account Type</th>
                 <th>Transaction amount</th>
                 <th>Transaction Date</th>
                 <th>Transaction Status</th>
             </tr>
             <tr>
                 <th>From Client id</th>
+                <th>From IBAN</th>
                 <th>First name</th>
                 <th>Last name</th>
                 <th>address</th>
@@ -35,15 +75,57 @@
                 <th>Occupation</th>
             </tr>
             <tr>
-                <th>To Client Id</th>
+                <th>To Client id</th>
                 <th>To IBAN</th>
-                <th>To Account Type</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>address</th>
+                <th>Birth date</th>
+                <th>Phone number</th>
+                <th>Email address</th>
+                <th>RRN</th>
+                <th>Employer name</th>
+                <th>Occupation</th>
             </tr>
         </thead>
         <tbody *ngFor="let transaction of transactionsResponse">
             <tr>
                 <td>{{transaction.transactionId}}</td>
-                <td>{{transaction.fromIndividualId}}</td>
+                <td>{{transaction.transactionAmount}}</td>
+                <td>{{transaction.transactionTime}}</td>
+                <td>{{transaction.status}}</td>
+            </tr>
+            <tr>
+                <td colspan="4">From</td>
+            </tr>
+            <tr>
+                <td>{{transaction.fromIndividualDTO.id}}</td>
+                <td>{{transaction.fromIban}}</td>
+                <td>{{transaction.fromIndividualDTO.firstName}}</td>
+                <td>{{transaction.fromIndividualDTO.lastName}}</td>
+                <td>{{transaction.fromIndividualDTO.address}}</td>
+                <td>{{transaction.fromIndividualDTO.birthDate | date: 'dd:MM:yyyy'}}</td>
+                <td>{{transaction.fromIndividualDTO.phoneNumber}}</td>
+                <td>{{transaction.fromIndividualDTO.emailAddress}}</td>
+                <td>{{transaction.fromIndividualDTO.rrn}}</td>
+                <td>{{transaction.fromIndividualDTO.employerName}}</td>
+                <td>{{transaction.fromIndividualDTO.occupation}}</td>
+            </tr>
+            <tr>
+                <td colspan="4">To</td>
+            </tr>
+            <tr>
+                <td>{{transaction.toIndividualDTO.id}}</td>
+                <td>{{transaction.toIban}}</td>
+                <td>{{transaction.toIndividualDTO.firstName}}</td>
+                <td>{{transaction.toIndividualDTO.lastName}}</td>
+                <td>{{transaction.toIndividualDTO.address}}</td>
+                <td>{{transaction.toIndividualDTO.birthDate | date: 'dd:MM:yyyy'}}</td>
+                <td>{{transaction.toIndividualDTO.phoneNumber}}</td>
+                <td>{{transaction.toIndividualDTO.emailAddress}}</td>
+                <td>{{transaction.toIndividualDTO.rrn}}</td>
+                <td>{{transaction.toIndividualDTO.employerName}}</td>
+                <td>{{transaction.toIndividualDTO.occupation}}</td>
             </tr>
         </tbody>
     </table>

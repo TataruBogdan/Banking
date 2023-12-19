@@ -45,6 +45,7 @@ public class TransactionController {
     @Autowired
     private AccountLoanRestClient accountLoanRestClient;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/fromIban/{fromIban}/toIban/{toIban}")
     public ResponseEntity<TransactionDTO> createTransaction(
             @PathVariable("fromIban") String fromIban,
@@ -122,6 +123,7 @@ public class TransactionController {
         }
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PatchMapping(value = "/execute/{transactionId}", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<TransactionDTO> executeTransaction(@PathVariable("transactionId") String transactionId) {
 

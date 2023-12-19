@@ -32,7 +32,7 @@ export class CurrentAccountService {
 
     public getAccountByIndividualId(id: number): Observable<CurrentAccountAppResponse> {
 
-        const url: string = `${CURRENT_ACCOUNT_API_URL}//account-current/${id}`;
+        const url: string = `${CURRENT_ACCOUNT_API_URL}/account-current/${id}`;
         const authHeader = new HttpHeaders( {
             'Authorization': `Bearer ${localStorage.getItem('TOEKN')}`,
             'Content-Type': 'application/json'
