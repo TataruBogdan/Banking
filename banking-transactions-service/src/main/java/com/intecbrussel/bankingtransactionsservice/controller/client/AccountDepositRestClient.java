@@ -43,10 +43,12 @@ public class AccountDepositRestClient {
         HttpEntity<ArgsDTO> requestEntity = new HttpEntity<>(argsDTO, httpHeaders);
 
         AccountDepositDTO accountDepositDTOResponseEntity =
-                depositRestTemplate.postForObject("/account-debit" + individualId, requestEntity, AccountDepositDTO.class);
+                depositRestTemplate.postForObject("/create-account-deposit/individual" + individualId, requestEntity, AccountDepositDTO.class);
 
         return ResponseEntity.ofNullable(accountDepositDTOResponseEntity);
     }
+
+
 
 
 }

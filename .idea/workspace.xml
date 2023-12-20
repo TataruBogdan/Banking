@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="603d6e5b-8f25-47b5-b010-3f143ecf94b4" name="Changes" comment="With Security - TODO">
-      <change afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/interfaces/TransactionSearchInputDTO.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16419" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16421" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/base/16384/16444" afterDir="false" />
@@ -334,11 +333,6 @@
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_stat_tmp/global.stat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/postmaster.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/current-account/current-account.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/current/current-account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/current/current-account.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/transaction/transaction.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/services/transaction/transaction.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/banking-angular/banking-app/src/app/transaction/transaction.component.ts" afterDir="false" />
@@ -411,7 +405,7 @@
       <change beforePath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/docker/postgres-data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-master/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/TransactionStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons-lib/src/main/java/com/intecbrussel/commonsservice/dto/types/TransactionStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountDepositRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountDepositRestClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +423,7 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/banking-clients-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -490,10 +484,10 @@
     "Spring Boot.BankingCurrentAccountsServiceApplication.executor": "Run",
     "Spring Boot.BankingDepositAccountsServiceApplication.executor": "Run",
     "Spring Boot.BankingLoansServiceApplication.executor": "Run",
-    "Spring Boot.BankingTransactionsServiceApplication.executor": "Debug",
+    "Spring Boot.BankingTransactionsServiceApplication.executor": "Run",
     "Spring Boot.BankingUserServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/bogdan/IdeaProjects/bankingapp/banking-user-service",
@@ -534,7 +528,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingCurrentAccountsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.BankingLoansServiceApplication">
     <configuration name="BankingClientsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="banking-clients-service" />
@@ -684,7 +678,8 @@
       <workItem from="1702627891389" duration="14385000" />
       <workItem from="1702885991446" duration="9876000" />
       <workItem from="1702912305799" duration="128000" />
-      <workItem from="1702971917398" duration="16326000" />
+      <workItem from="1702971917398" duration="17025000" />
+      <workItem from="1703058268322" duration="11711000" />
     </task>
     <task id="LOCAL-00001" summary="add banking-clients-service">
       <option name="closed" value="true" />
@@ -833,6 +828,26 @@
           <line>62</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-deposit-accounts-service/src/main/java/com/intecbrussel/bankingdepositaccountsservice/deposit/controller/AccountDepositController.java</url>
           <line>52</line>
@@ -843,15 +858,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/TransactionController.java</url>
-          <line>49</line>
-          <properties class="com.intecbrussel.bankingtransactionsservice.controller.TransactionController" method="createTransaction">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountDepositRestClient.java</url>
           <line>25</line>
           <properties class="com.intecbrussel.bankingtransactionsservice.controller.client.AccountDepositRestClient" method="getAccountDepositByIban">
@@ -859,6 +865,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/banking-transactions-service/src/main/java/com/intecbrussel/bankingtransactionsservice/controller/client/AccountDepositRestClient.java</url>
+          <line>33</line>
+          <properties class="com.intecbrussel.bankingtransactionsservice.controller.client.AccountDepositRestClient" method="createNewAccountDepositForIndividual">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

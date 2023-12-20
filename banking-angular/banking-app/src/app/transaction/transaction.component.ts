@@ -18,6 +18,7 @@ export class TransactionComponent implements OnInit{
     private message: string = '';
     statusList: string ='';
     transactionId: string ='';
+    transactionWithId: string = '';
 
     constructor(
         private route: ActivatedRoute,
@@ -90,6 +91,16 @@ export class TransactionComponent implements OnInit{
                 this.message = 'Transaction executed'
             },
             error: (err: 'Error on creating transaction') => console.log(err)
+        })
+    }
+
+    getTransactionId() {
+        this.transactionsService.getTransactionWithId(this.transactionWithId).subscribe( {
+            next: (response) => {
+                this.transactionsResponse = Array.of(response)
+                this.message ='Transaction with id'
+            },
+            error: (err: 'Error on retrieving transaction') => console.log(err)
         })
     }
 

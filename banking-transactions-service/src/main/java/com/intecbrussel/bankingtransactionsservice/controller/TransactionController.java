@@ -110,13 +110,23 @@ public class TransactionController {
     public ResponseEntity<TransactionDTO> retrieveTransaction(@PathVariable("transactionId") String transactionId) {
 
         Optional<TransactionDTO> transactionByIBAN = transactionService.getTransactionById(transactionId);
+        AccountCurrentDTO accountCurrentToIban = null;
+        AccountDepositDTO accountDepositByIban = null;
 
         if (transactionByIBAN.isPresent()) {
             AccountCurrentDTO accountCurrentFromIban = accountCurrentRestClient.getAccountCurrentByIban(transactionByIBAN.get().getFromIban());
-            AccountCurrentDTO accountCurrentToIban = accountCurrentRestClient.getAccountCurrentByIban(transactionByIBAN.get().getToIban());
+            AccountType toAccountType = transactionByIBAN.get().getToAccountType();
+            if (toAccountType.toString().equals("CURRENT")) {
+                accountCurrentToIban = accountCurrentRestClient.getAccountCurrentByIban(transactionByIBAN.get().getToIban());
+                transactionByIBAN.get().setToIndividualDTO(accountCurrentToIban.getIndividual());
+            } else if (toAccountType.toString().equals("DEPOSIT")) {
+                accountDepositByIban = accountDepositRestClient.getAccountDepositByIban(transactionByIBAN.get().getToIban());
+                transactionByIBAN.get().setToIndividualDTO(accountDepositByIban.getIndividualDTO());
+            }
+
 
             transactionByIBAN.get().setFromIndividualDTO(accountCurrentFromIban.getIndividual());
-            transactionByIBAN.get().setToIndividualDTO(accountCurrentToIban.getIndividual());
+
             return ResponseEntity.ok(transactionByIBAN.get());
         } else {
              return ResponseEntity.notFound().build();
@@ -169,7 +179,7 @@ public class TransactionController {
 
                     }
                     int maturityMonths = accountDepositByIban.getMaturityMonths();
-                    accountDepositRestClient.createNewAccountDepositForIndividual(toIndividualDTO, maturityMonths, transactionAmount);
+                    accountDepositRestClient.createNewAccountDepositForIndividual(toIndividualDTO, 6, transactionAmount);
                     break;
                 }
             }

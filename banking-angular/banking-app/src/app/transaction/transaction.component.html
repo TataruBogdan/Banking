@@ -37,7 +37,15 @@
     <button class="btn btn-success" (click)="getExecuteTransaction()">Execute Transaction</button>
 </div>
 
-<div class="container d-flex, justify-content-center">
+<div class="container">
+    <p>Get transactions with ID</p>
+    <label for="transactionId">Enter Transaction id:</label>
+    <input id="transactionId" type="text" [(ngModel)]="transactionWithId">
+
+    <button class="btn btn-success" (click)="getTransactionId()">Get Transaction</button>
+</div>
+
+<div class="container">
     <table class="table">
         <thead >
             <tr>
@@ -52,7 +60,7 @@
     </table>
 </div>
 
-<div class="container d-flex, justify-content-center">
+<div class="container d-flex justify-content-center">
     <table class="table">
         <thead>
             <tr>
@@ -88,11 +96,11 @@
                 <th>Occupation</th>
             </tr>
         </thead>
-        <tbody *ngFor="let transaction of transactionsResponse">
+        <tbody *ngFor="let transaction of transactionsResponse" style="border-bottom: 2px solid red">
             <tr>
                 <td>{{transaction.transactionId}}</td>
                 <td>{{transaction.transactionAmount}}</td>
-                <td>{{transaction.transactionTime}}</td>
+                <td>{{transaction.transactionTime | date : 'dd:MM:yyyy'}}</td>
                 <td>{{transaction.status}}</td>
             </tr>
             <tr>
